@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.springboot.workorder.dao.res.WorkOrderDao">
+	<select id="findById" resultType="java.util.HashMap"
+		parameterType="java.lang.String">
+		select workjob_id,title from res.work_order where
+		workjob_id = #{id} order by operatetime desc
+	</select>
+	<update id="insertFailRecord" parameterType="java.lang.String">s
+		insert into
+		res.work_order(statement,issucced,operatetime,failed_reason,workjob_id)values(?,?,sysdate,?,?)","校验失败",
+		2, #{failed_reason},#{workjob_id})
+	</update>
+	<update id="insertRecord" parameterType="map">
+		insert into
+		res.work_order(workjob_id,title,department,send_time,handle_time,location,area,statement,workjob_type,localfile,operatetime,ftp)values(#{map.workjob_id,jdbcType=VARCHAR},#{map.title,jdbcType=VARCHAR},#{map.department,jdbcType=VARCHAR},to_date(#{map.send_time,jdbcType=VARCHAR},'SYYYY-MM-DD
+		HH24:MI:SS'),to_date(#{map.handle_time,jdbcType=VARCHAR},'SYYYY-MM-DD
+		HH24:MI:SS'),#{map.location,jdbcType=VARCHAR},#{map.area,jdbcType=VARCHAR},'待处理',#{map.type,jdbcType=VARCHAR},#{map.localFile,jdbcType=VARCHAR},#{map.ftpUrl,jdbcType=VARCHAR})
+	</update>
+	<select id="findByStateAndType" resultType="java.util.HashMap"
+		parameterType="java.lang.String">
+		select * from res.work_order where statement = #{state} and workjob_type =
+		#{type}
+	</select>
+	<update id="updateStateById" parameterType="java.lang.String">
+	    update res.work_order set statement = #{state} where workjob_id = #{id}
+	</update>
+	<update id="updateFailById" parameterType="java.lang.String">
+	    update res.work_order set statement= #{statement},issucced = 2,operatetime = sysdate,failed_reason = #{failed_reason},order_user = #{order_user} where order_user = #{order_user}
+	</update>
+	
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.springboot.workorder.dao.res.TemporaryBakDao">
+	<update id="insertRecord" parameterType="map">
+		insert into
+		res.emp_task(workjob_id,startDate,endDate,hotstpotid,projectStatus)values(#{map.WORKJOB_ID,jdbcType=VARCHAR},#{map.STARTDATE,jdbcType=DATE},#{map.ENDDATE,jdbcType=DATE},#{map.hotspotid,jdbcType=VARCHAR},#{map.projectStatus,jdbcType=DECIMAL})
+	</update>
+	<update id="deleteRecord">
+		delete from res.temp_task where workjob_id =
+		#{map.WORKJOB_ID,jdbcType=VARCHAR} and projectStatus =
+		#{map.PROJECTSTATUS,jdbcType=DECIMAL}
+	</update>
+	<select id="findAll" resultType="java.util.HashMap">
+		select * from res.temp_task
+	</select>
+
+</mapper>
