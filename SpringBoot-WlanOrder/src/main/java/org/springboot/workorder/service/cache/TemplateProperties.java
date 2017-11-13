@@ -17,15 +17,22 @@ import org.springframework.stereotype.Service;
 public class TemplateProperties implements InitializingBean{
 	Logger logger = Logger.getLogger(getClass());
 	
+	private String BasicInformationPath = "excelTemplate/Basic_Information.properties";
+	
+	private String OrderDispenserPath = "OrderDispenser.properties";
+	
 	public static Map<String,Map<String,String>> TemplatePropertiesMap = new HashMap<String, Map<String,String>>();
+	
+	public static Map<String,String> OrderDispenserMap = new HashMap<String, String>();
 	
 	public void init() {
 		logger.info("Template configuration loading ... ...");
-		parseProperties("BasicInformation","excelTemplate/Basic_Information.properties");
+		parseProperties();
+		parseProperties("BasicInformation",BasicInformationPath);
 		logger.info("Template configuration load succeed!");
 	}; 
 	
-	public void parseProperties(String key,String path) {
+	private void parseProperties(String key,String path) {
 		HashMap<String, String> map = new HashMap<String,String>();
 		Properties pro = FileTools.getProperties(path);
 		String[] heads = pro.getProperty("heads").split(",");
@@ -36,6 +43,13 @@ public class TemplateProperties implements InitializingBean{
 			map.put(head, pro.getProperty(head));
 		}
 		TemplatePropertiesMap.put(key, map);
+	}
+	
+	private void parseProperties() {
+		Properties pro = FileTools.getProperties(OrderDispenserPath);
+		for(Object key:pro.keySet()) {
+			OrderDispenserMap.put((String)key, pro.getProperty((String) key));
+		}
 	}
 
 	@Override
