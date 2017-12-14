@@ -15,7 +15,7 @@ public abstract class OrderHandler {
 	
 	public Map orderMap;
 	
-	public abstract void handle();
+	public abstract void handle() throws Exception;
 	
 	public void setOrderMap(Map map) {
 		this.orderMap = map;

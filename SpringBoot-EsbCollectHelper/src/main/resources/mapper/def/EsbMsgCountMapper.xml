@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.springboot.esbcollecthelper.dao.def.EsbMsgCountDao">
+	<select id="countEffectiveMsg" resultType="java.util.HashMap">
+		select count(a.ID) as receive, to_char(b.period, 'MM-dd') as period
+		from (select ID, RECEIVE_TIME_STAMP
+		from ipmsds.META_DT_TASK_RECORD
+		where FILENAME_PATTERN is not null
+		<![CDATA[and RECEIVE_TIME_STAMP > sysdate - 8) a
+		right join (select level, trunc(sysdate) - 1 * level as period
+		from dual
+		connect by level <= 7]]>
+		order by level) b
+		on trunc(a.RECEIVE_TIME_STAMP) = b.period
+		group by
+		b.period
+		order by b.period
+	</select>
+
+	<select id="messageComponents" resultType="java.util.HashMap">
+		with t1 as
+		(select
+		count(1) tot
+		from ipmsds.META_DT_TASK_RECORD
+		where receive_time_stamp
+		between trunc(sysdate - 1) and
+		trunc(sysdate) - 0.00001),
+		t2 as
+		(select
+		count(1) eff
+		from ipmsds.META_DT_TASK_RECORD
+		where FILENAME_PATTERN is
+		not null
+		and receive_time_stamp between trunc(sysdate - 1) and
+		trunc(sysdate) - 0.00001),
+		t3 as
+		(select count(1) err
+		from
+		ipmsds.META_DT_TASK_RECORD
+		where ERROR_REASON is not null
+		and
+		FILENAME_PATTERN is not null
+		and receive_time_stamp between
+		trunc(sysdate - 1) and
+		trunc(sysdate) - 0.00001)
+		select t1.tot, t2.eff,
+		t3.err from t1, t2, t3
+	</select>
+
+	<select id="transError" resultType="java.util.HashMap">
+		select t1.receive as inreceive,t2.receive as vareceive,t1.period from
+		(select count(a.ID) as receive, to_char(b.period, 'MM-dd') as period
+		from (select ID, RECEIVE_TIME_STAMP
+		from ipmsds.META_DT_TASK_RECORD
+		where
+		ERROR_REASON like '%invalid number%' and
+		ERROR_REASON is not null
+		and
+		FILENAME_PATTERN is not null
+		<![CDATA[and RECEIVE_TIME_STAMP > sysdate - 8) a
+		right join (select level, trunc(sysdate) - 1 * level as period
+		from dual
+		connect by level <= 7]]>
+		order by level) b
+		on trunc(a.RECEIVE_TIME_STAMP) = b.period
+		group by
+		b.period
+		order by b.period) t1
+		right join
+		(select count(a.ID) as receive,
+		to_char(b.period, 'MM-dd') as period
+		from (select ID,
+		RECEIVE_TIME_STAMP
+		from ipmsds.META_DT_TASK_RECORD
+		where
+		ERROR_REASON
+		like '%value too large%' and
+		ERROR_REASON is not null and
+		FILENAME_PATTERN is not null
+		<![CDATA[and RECEIVE_TIME_STAMP > sysdate - 8) a
+		right join (select level, trunc(sysdate) - 1 * level as period
+		from dual
+		connect by level <= 7]]>
+		order by level) b
+		on trunc(a.RECEIVE_TIME_STAMP) = b.period
+		group by
+		b.period
+		order by b.period) t2
+		on t1.period = t2.period
+	</select>
+
+	<select id="errorReason" resultType="java.util.HashMap">
+		select ERROR_REASON,
+		FILENAME_PATTERN,
+		PARSE_RULE,
+		to_char(PATH_TIME_STAMP, 'yyyy-MM-dd hh24:mi:ss') PATH_TIME_STAMP,
+		to_char(RECEIVE_TIME_STAMP, 'yyyy-MM-dd hh24:mi:ss') RECEIVE_TIME_STAMP,
+		SOURCE_PATH,
+		TABLE_NAME
+		from
+		ipmsds.META_DT_TASK_RECORD
+		where ERROR_REASON is not null
+		and
+		FILENAME_PATTERN is not null
+		and receive_time_stamp between
+		trunc(sysdate - 1 / 24, 'hh') and
+		trunc(sysdate, 'hh') - 0.00001
+	</select>
+
+	<select id="msgDetail" resultType="java.util.HashMap" parameterType="java.lang.String">
+		select ID,
+		to_char(RECEIVE_TIME_STAMP, 'YYYY-MM-DD hh24:mi:ss') RECEIVE_TIME_STAMP,
+		MSG_CONTENT
+		from ipmsds.META_DT_MSG_RECORD t
+		where 
+		<if test="protocol!=null and protocol!=''">
+		msg_content like CONCAT(CONCAT('%', #{protocol}),'%') and
+		</if>
+		receive_time_stamp between to_date(#{startTime}, 'YYYY-MM-DD hh24:mi:ss') and
+		to_date(#{endTime}, 'YYYY-MM-DD hh24:mi:ss')
+	</select>
+
+</mapper>
