@@ -5,7 +5,7 @@ $(function() {
 			async : false,
 			type : "get",
 			contentType : "application/json",
-			url : "http://192.168.1.193:8080/api/errorLeftCount",
+			url : "http://localhost:8080/api/errorLeftCount",
 			success : function(result) {
 				if (result != null) {
 					data = result;
@@ -22,14 +22,14 @@ $(function() {
 
 $(document).ready(function() {
 	$("#valueTooLarge").click(function() {
-		var url = "http://192.168.1.193:8080/api/valueTooLarge";
+		var url = "http://localhost:8080/api/valueTooLarge";
 		window.location.href = url;
 	});
 });
 
 $(document).ready(function() {
 	$("#otherError").click(function() {
-		var url = "http://192.168.1.193:8080/api/otherError";
+		var url = "http://localhost:8080/api/otherError";
 		window.location.href = url;
 	});
 });

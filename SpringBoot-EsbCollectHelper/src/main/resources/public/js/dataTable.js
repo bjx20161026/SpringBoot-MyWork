@@ -37,7 +37,7 @@ $(document).ready(function() {
 						async : true,
 						type : "get",
 						contentType : "application/json",
-						url : "http://192.168.1.193:8080/api/messageKeyInfo?protocol="+protocol+"&startTime="+startTime+"&endTime="+endTime,
+						url : "http://localhost:8080/api/messageKeyInfo?protocol="+protocol+"&startTime="+startTime+"&endTime="+endTime,
 						success : function(result) {
 							if (result != null) {
 								data = result;
@@ -71,7 +71,7 @@ function sendMsg(fileName){
 		async : false,
 		type : "get",
 		contentType : "application/json",
-		url : "http://192.168.1.193:8080/api/sendMsg?fileName="+fileName,
+		url : "http://localhost:8080/api/sendMsg?fileName="+fileName,
 		success : function(result) {
 			alert(result);
 		}
@@ -79,7 +79,7 @@ function sendMsg(fileName){
 }
 
 function download(fileName){
-    var url = "http://192.168.1.193:8080/api/downByFileName?fileName="+fileName;
+    var url = "http://localhost:8080/api/downByFileName?fileName="+fileName;
     window.location.href=url;
 }
 
