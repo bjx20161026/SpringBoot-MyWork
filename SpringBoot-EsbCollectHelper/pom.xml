@@ -6,8 +6,8 @@
 	<groupId>SpringBoot-EsbCollectHelper</groupId>
 	<artifactId>SpringBoot-EsbCollectHelper</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-		<repositories>
+
+	<repositories>
 		<repository>
 			<id>local-maven-repo</id>
 			<url>https://raw.githubusercontent.com/bjx20161026/local-maven-repo/master/repository</url>
@@ -23,16 +23,16 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mybatis-spring-boot>1.2.0</mybatis-spring-boot>
 		<tomcat.version>7.0.59</tomcat.version>
-		 <java.version>1.8</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
 
-			<dependency>
-				<groupId>bjx-helper</groupId>
-				<artifactId>bjx-helper</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency> 
+		<dependency>
+			<groupId>bjx-helper</groupId>
+			<artifactId>bjx-helper</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<!-- TO Support JDK 1.6 start -->
 		<dependency>
