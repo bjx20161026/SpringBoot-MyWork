@@ -2,8 +2,8 @@ package org.springboot.esbcollecthelper.service.transErrorHandler;
 
 import java.util.Map;
 
+import org.bjx.helper.common.RegularHelper;
 import org.springboot.esbcollecthelper.service.cache.TransErrorListCache;
-import org.springboot.esbcollecthelper.util.common.RegularHelper;
 import org.springframework.stereotype.Service;
 
 @Service

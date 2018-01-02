@@ -1,5 +1,11 @@
 var showMsg = false;
 
+$(function() {
+	table = $('#esbMsg').DataTable();
+	table.column( 3 ).visible( false );
+	table.column( 4 ).visible( false );
+	});
+
 $('#my-checkbox').bootstrapSwitch();  
 
 $('#my-checkbox').on('switchChange.bootstrapSwitch', function (event,state) {  
@@ -55,6 +61,7 @@ $(document).ready(function() {
 								});
 								$("#button").removeClass("btn btn-primary").addClass("btn btn-success").attr('disabled',false);
 								$("#loader").removeClass("card loader");
+								table.column( 3 ).visible( true );
 								if (showMsg == false) {
 								table.column( 4 ).visible( false );
 								}

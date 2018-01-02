@@ -2,8 +2,8 @@ package org.springboot.esbcollecthelper.service.fileDownLoad;
 
 import java.io.ByteArrayOutputStream;
 
+import org.bjx.helper.ftp.FileOperate;
 import org.springboot.esbcollecthelper.service.cache.MsgInfoCache;
-import org.springboot.esbcollecthelper.util.ftp.FileOperate;
 import org.springframework.stereotype.Service;
 
 @Service

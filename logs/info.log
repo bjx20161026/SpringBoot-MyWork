@@ -1,451 +1,72 @@
-2017-11-08 17:04:21.483 [main] INFO  org.springboot.workorder.Application -Starting Application on jxbai-PC with PID 7436 (E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder)
-2017-11-08 17:04:21.486 [main] INFO  org.springboot.workorder.Application -No active profile set, falling back to default profiles: default
-2017-11-08 17:04:21.559 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ee72e6: startup date [Wed Nov 08 17:04:21 CST 2017]; root of context hierarchy
-2017-11-08 17:04:22.309 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[org.springboot.workorder.dao.rm]' package. Please check your configuration.
-2017-11-08 17:04:22.708 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:04:22.833 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:04:22.859 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$900b3860] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:04:23.307 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-11-08 17:04:23.324 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-11-08 17:04:23.327 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
-2017-11-08 17:04:23.416 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-11-08 17:04:23.416 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1857 ms
-2017-11-08 17:04:23.524 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-11-08 17:04:23.528 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-11-08 17:04:23.528 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-11-08 17:04:23.528 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-11-08 17:04:23.528 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-11-08 17:04:24.083 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration loading ... ...
-2017-11-08 17:04:24.084 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration load succeed!
-2017-11-08 17:04:28.056 [Thread-2] ERROR o.s.w.s.t.t.q.TemporaryQueueHandler -java.math.BigDecimal cannot be cast to java.lang.Integer
-2017-11-08 17:04:28.349 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ee72e6: startup date [Wed Nov 08 17:04:21 CST 2017]; root of context hierarchy
-2017-11-08 17:04:28.415 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/test2],methods=[GET]}" onto public java.lang.String org.springboot.workorder.controller.CityRestController.getString()
-2017-11-08 17:04:28.416 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/test],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.workorder.controller.CityRestController.getTestString() throws java.lang.Exception,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException
-2017-11-08 17:04:28.416 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/map],methods=[GET]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> org.springboot.workorder.controller.CityRestController.getTestMap() throws java.io.IOException
-2017-11-08 17:04:28.417 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/rest/workOrder/handleOrders],methods=[POST]}" onto public int org.springboot.workorder.controller.WlanOrderController.handleOrders(java.lang.String) throws java.lang.Exception
-2017-11-08 17:04:28.423 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-11-08 17:04:28.423 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-11-08 17:04:28.448 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:04:28.448 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:04:28.480 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:04:28.707 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2017-11-08 17:04:28.734 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2017-11-08 17:04:28.741 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:04:28.800 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2017-11-08 17:04:28.810 [main] INFO  org.springboot.workorder.Application -Started Application in 7.639 seconds (JVM running for 8.291)
-2017-11-08 17:04:28.957 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:04:47.252 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-11-08 17:04:47.252 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2017-11-08 17:04:47.279 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
-2017-11-08 17:04:47.363 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-com.fasterxml.jackson.databind.JsonMappingException: No content to map due to end-of-input
- at [Source: ; line: 1, column: 0]
-	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:270)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3838)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3783)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2842)
-	at org.springboot.workorder.controller.CityRestController.getTestString(CityRestController.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-2017-11-08 17:05:19.756 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
-2017-11-08 17:05:28.742 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:05:28.761 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:06:28.743 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:06:28.761 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:06:45.150 [http-nio-8080-exec-4] INFO  o.s.w.controller.WlanOrderController -POST handleOrders [{
-    "A":"a",
-    "B":"b"
-}]
-2017-11-08 17:06:45.191 [http-nio-8080-exec-4] INFO  o.s.w.controller.WlanOrderController -Map key [A] value [a]
-2017-11-08 17:06:45.191 [http-nio-8080-exec-4] INFO  o.s.w.controller.WlanOrderController -Map key [B] value [b]
-2017-11-08 17:07:28.743 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:07:28.761 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:08:28.744 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:08:28.761 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:22:08.607 [main] INFO  org.springboot.workorder.Application -Starting Application on jxbai-PC with PID 2108 (E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder)
-2017-11-08 17:22:08.609 [main] INFO  org.springboot.workorder.Application -No active profile set, falling back to default profiles: default
-2017-11-08 17:22:08.657 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ee72e6: startup date [Wed Nov 08 17:22:08 CST 2017]; root of context hierarchy
-2017-11-08 17:22:09.069 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[org.springboot.workorder.dao.rm]' package. Please check your configuration.
-2017-11-08 17:22:09.370 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:22:09.430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:22:09.451 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$159458d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:22:09.810 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-11-08 17:22:09.822 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-11-08 17:22:09.822 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
-2017-11-08 17:22:09.889 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-11-08 17:22:09.889 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1232 ms
-2017-11-08 17:22:09.993 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-11-08 17:22:09.996 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-11-08 17:22:09.997 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-11-08 17:22:09.997 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-11-08 17:22:09.997 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-11-08 17:22:10.337 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration loading ... ...
-2017-11-08 17:22:10.338 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration load succeed!
-2017-11-08 17:23:47.117 [main] INFO  org.springboot.workorder.Application -Starting Application on jxbai-PC with PID 6968 (E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder)
-2017-11-08 17:23:47.119 [main] INFO  org.springboot.workorder.Application -No active profile set, falling back to default profiles: default
-2017-11-08 17:23:47.166 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ee72e6: startup date [Wed Nov 08 17:23:47 CST 2017]; root of context hierarchy
-2017-11-08 17:23:47.572 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[org.springboot.workorder.dao.rm]' package. Please check your configuration.
-2017-11-08 17:23:47.872 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:23:47.932 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:23:47.956 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4ad697b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:23:48.316 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-11-08 17:23:48.324 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-11-08 17:23:48.325 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
-2017-11-08 17:23:48.394 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-11-08 17:23:48.394 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1228 ms
-2017-11-08 17:23:48.497 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-11-08 17:23:48.500 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-11-08 17:23:48.501 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-11-08 17:23:48.501 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-11-08 17:23:48.501 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-11-08 17:23:48.841 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration loading ... ...
-2017-11-08 17:23:48.842 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration load succeed!
-2017-11-08 17:24:54.046 [Thread-2] ERROR o.s.w.s.t.t.q.TemporaryQueueHandler -java.math.BigDecimal cannot be cast to java.lang.Integer
-2017-11-08 17:24:54.362 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ee72e6: startup date [Wed Nov 08 17:23:47 CST 2017]; root of context hierarchy
-2017-11-08 17:24:54.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/test2],methods=[GET]}" onto public java.lang.String org.springboot.workorder.controller.CityRestController.getString()
-2017-11-08 17:24:54.461 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/test],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.workorder.controller.CityRestController.getTestString() throws java.lang.Exception,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException
-2017-11-08 17:24:54.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/map],methods=[GET]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> org.springboot.workorder.controller.CityRestController.getTestMap() throws java.io.IOException
-2017-11-08 17:24:54.463 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/rest/workOrder/handleOrders],methods=[POST]}" onto public int org.springboot.workorder.controller.WlanOrderController.handleOrders(java.lang.String) throws java.lang.Exception
-2017-11-08 17:24:54.467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-11-08 17:24:54.467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-11-08 17:24:54.512 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:24:54.513 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:24:54.562 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:24:54.859 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2017-11-08 17:24:54.875 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2017-11-08 17:24:54.881 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:24:54.948 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2017-11-08 17:24:54.953 [main] INFO  org.springboot.workorder.Application -Started Application in 68.065 seconds (JVM running for 68.537)
-2017-11-08 17:24:54.968 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:25:54.882 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:25:54.903 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:26:54.883 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:26:54.928 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:27:54.883 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:27:54.964 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:28:54.884 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:28:54.969 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:29:54.885 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:29:54.902 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:30:54.885 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:30:54.902 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:31:52.879 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-11-08 17:31:52.880 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2017-11-08 17:31:52.911 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
-2017-11-08 17:31:52.968 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -POST handleOrders [[
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.80",
-                "TOTAL_REQUEST_NUM": 38,
-                "RETURN_NUM": 38,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 1
-            },
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.81",
-                "TOTAL_REQUEST_NUM": 12,
-                "RETURN_NUM": 12,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 2
-            },
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.82",
-                "TOTAL_REQUEST_NUM": 28,
-                "RETURN_NUM": 28,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 3
-            }
-        ]]
-2017-11-08 17:31:53.021 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize Class org.springframework.context.annotation.Bean (of type annotation) as a Bean
- at [Source: [
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.80",
-                "TOTAL_REQUEST_NUM": 38,
-                "RETURN_NUM": 38,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 1
-            },
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.81",
-                "TOTAL_REQUEST_NUM": 12,
-                "RETURN_NUM": 12,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 2
-            },
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.82",
-                "TOTAL_REQUEST_NUM": 28,
-                "RETURN_NUM": 28,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 3
-            }
-        ]; line: 1, column: 1]
-	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:305)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:268)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
-	at com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer(DeserializationContext.java:443)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.createContextual(CollectionDeserializer.java:206)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.createContextual(CollectionDeserializer.java:26)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleSecondaryContextualization(DeserializationContext.java:681)
-	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:481)
-	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:3899)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3794)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2861)
-	at org.springboot.workorder.controller.WlanOrderController.handleOrders(WlanOrderController.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.IllegalArgumentException: Can not deserialize Class org.springframework.context.annotation.Bean (of type annotation) as a Bean
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.isPotentialBeanType(BeanDeserializerFactory.java:802)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:137)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:403)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
-	... 65 common frames omitted
-2017-11-08 17:31:54.886 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:31:54.937 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:32:54.887 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:32:54.961 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:33:54.887 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:33:54.909 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:34:54.888 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:34:54.946 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:35:54.889 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:35:54.948 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:40:03.059 [main] INFO  org.springboot.workorder.Application -Starting Application on jxbai-PC with PID 7852 (E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-WlanOrder)
-2017-11-08 17:40:03.061 [main] INFO  org.springboot.workorder.Application -No active profile set, falling back to default profiles: default
-2017-11-08 17:40:03.110 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ee72e6: startup date [Wed Nov 08 17:40:03 CST 2017]; root of context hierarchy
-2017-11-08 17:40:03.521 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[org.springboot.workorder.dao.rm]' package. Please check your configuration.
-2017-11-08 17:40:03.823 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:40:03.885 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:40:03.909 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3554dd3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-11-08 17:40:04.277 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-11-08 17:40:04.286 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-11-08 17:40:04.287 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
-2017-11-08 17:40:04.362 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-11-08 17:40:04.362 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1252 ms
-2017-11-08 17:40:04.465 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-11-08 17:40:04.468 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-11-08 17:40:04.469 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-11-08 17:40:04.469 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-11-08 17:40:04.469 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-11-08 17:40:04.809 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration loading ... ...
-2017-11-08 17:40:04.810 [main] INFO  o.s.w.s.cache.TemplateProperties -Template configuration load succeed!
-2017-11-08 17:40:09.751 [Thread-2] ERROR o.s.w.s.t.t.q.TemporaryQueueHandler -java.math.BigDecimal cannot be cast to java.lang.Integer
-2017-11-08 17:40:09.990 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ee72e6: startup date [Wed Nov 08 17:40:03 CST 2017]; root of context hierarchy
-2017-11-08 17:40:10.043 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/test2],methods=[GET]}" onto public java.lang.String org.springboot.workorder.controller.CityRestController.getString()
-2017-11-08 17:40:10.043 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/test],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.workorder.controller.CityRestController.getTestString() throws java.lang.Exception,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException
-2017-11-08 17:40:10.044 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/map],methods=[GET]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> org.springboot.workorder.controller.CityRestController.getTestMap() throws java.io.IOException
-2017-11-08 17:40:10.045 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/rest/workOrder/handleOrders],methods=[POST]}" onto public int org.springboot.workorder.controller.WlanOrderController.handleOrders(java.lang.String) throws java.lang.Exception
-2017-11-08 17:40:10.046 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-11-08 17:40:10.047 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-11-08 17:40:10.069 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:40:10.070 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:40:10.106 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-11-08 17:40:10.278 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2017-11-08 17:40:10.286 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2017-11-08 17:40:10.289 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:40:10.323 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2017-11-08 17:40:10.326 [main] INFO  org.springboot.workorder.Application -Started Application in 7.493 seconds (JVM running for 7.954)
-2017-11-08 17:40:10.327 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:40:20.294 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-11-08 17:40:20.294 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2017-11-08 17:40:20.319 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
-2017-11-08 17:40:20.383 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -POST handleOrders [[
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.80",
-                "TOTAL_REQUEST_NUM": 38,
-                "RETURN_NUM": 38,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 1
-            },
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.81",
-                "TOTAL_REQUEST_NUM": 12,
-                "RETURN_NUM": 12,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 2
-            },
-            {
-                "TIME_ID_SHOW": "2017-10-12 05",
-                "TIME_ID": 201710120500,
-                "HTTP_HOST": "223.111.10.82",
-                "TOTAL_REQUEST_NUM": 28,
-                "RETURN_NUM": 28,
-                "RETURN_RATIO": 100,
-                "RETURN_FAIL_NUM": 0,
-                "RETURN_FAIL_RATIO": 0,
-                "ROW_": 3
-            }
-        ]]
-2017-11-08 17:40:20.423 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TIME_ID_SHOW] value [2017-10-12 05]
-2017-11-08 17:40:20.423 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TIME_ID] value [201710120500]
-2017-11-08 17:40:20.423 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [HTTP_HOST] value [223.111.10.80]
-2017-11-08 17:40:20.424 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TOTAL_REQUEST_NUM] value [38]
-2017-11-08 17:40:20.424 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_NUM] value [38]
-2017-11-08 17:40:20.424 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_RATIO] value [100]
-2017-11-08 17:40:20.424 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_FAIL_NUM] value [0]
-2017-11-08 17:40:20.424 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_FAIL_RATIO] value [0]
-2017-11-08 17:40:20.424 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [ROW_] value [1]
-2017-11-08 17:40:20.425 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TIME_ID_SHOW] value [2017-10-12 05]
-2017-11-08 17:40:20.425 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TIME_ID] value [201710120500]
-2017-11-08 17:40:20.425 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [HTTP_HOST] value [223.111.10.81]
-2017-11-08 17:40:20.425 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TOTAL_REQUEST_NUM] value [12]
-2017-11-08 17:40:20.425 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_NUM] value [12]
-2017-11-08 17:40:20.425 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_RATIO] value [100]
-2017-11-08 17:40:20.426 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_FAIL_NUM] value [0]
-2017-11-08 17:40:20.426 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_FAIL_RATIO] value [0]
-2017-11-08 17:40:20.426 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [ROW_] value [2]
-2017-11-08 17:40:20.426 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TIME_ID_SHOW] value [2017-10-12 05]
-2017-11-08 17:40:20.426 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TIME_ID] value [201710120500]
-2017-11-08 17:40:20.426 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [HTTP_HOST] value [223.111.10.82]
-2017-11-08 17:40:20.427 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [TOTAL_REQUEST_NUM] value [28]
-2017-11-08 17:40:20.427 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_NUM] value [28]
-2017-11-08 17:40:20.427 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_RATIO] value [100]
-2017-11-08 17:40:20.427 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_FAIL_NUM] value [0]
-2017-11-08 17:40:20.427 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [RETURN_FAIL_RATIO] value [0]
-2017-11-08 17:40:20.428 [http-nio-8080-exec-1] INFO  o.s.w.controller.WlanOrderController -Map key [ROW_] value [3]
-2017-11-08 17:41:10.291 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:41:10.311 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:42:10.291 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:42:10.309 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:43:10.292 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:43:10.309 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
-2017-11-08 17:44:10.292 [pool-3-thread-1] INFO  o.s.w.s.t.t.timed.RecordHandler -scan order table to find tempprary record that waiting to be handled start ...
-2017-11-08 17:44:10.309 [pool-3-thread-1] INFO  o.s.w.s.t.u.timed.MsgHandler -Scan recieve table to find unhandle msg start ...
+2017-12-31 18:48:34.528 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 8948 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2017-12-31 18:48:34.537 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2017-12-31 18:48:34.628 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Sun Dec 31 18:48:34 CST 2017]; root of context hierarchy
+2017-12-31 18:48:35.928 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-31 18:48:36.028 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-31 18:48:36.062 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3f9fb646] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-31 18:48:36.799 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2017-12-31 18:48:36.818 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-12-31 18:48:36.819 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2017-12-31 18:48:37.016 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-12-31 18:48:37.017 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2389 ms
+2017-12-31 18:48:37.128 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-31 18:48:37.129 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-31 18:48:37.130 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-31 18:48:37.130 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-31 18:48:37.130 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-31 18:48:37.680 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transErrorHandlerImpl': Unsatisfied dependency expressed through field 'excelWriterForExitence'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.bjx.helper.excel.ExcelWriterForExitence' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-12-31 18:48:37.685 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-31 18:48:37.804 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field excelWriterForExitence in org.springboot.esbcollecthelper.service.esbMsgCount.impl.TransErrorHandlerImpl required a bean of type 'org.bjx.helper.excel.ExcelWriterForExitence' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.bjx.helper.excel.ExcelWriterForExitence' in your configuration.
+
+2017-12-31 18:53:52.082 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 8696 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2017-12-31 18:53:52.084 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2017-12-31 18:53:52.136 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Sun Dec 31 18:53:52 CST 2017]; root of context hierarchy
+2017-12-31 18:53:52.944 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-31 18:53:53.018 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-31 18:53:53.049 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d8ae9ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-31 18:53:53.590 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2017-12-31 18:53:53.599 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-12-31 18:53:53.600 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2017-12-31 18:53:53.734 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-12-31 18:53:53.735 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1599 ms
+2017-12-31 18:53:53.839 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-31 18:53:53.841 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-31 18:53:53.841 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-31 18:53:53.841 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-31 18:53:53.842 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-31 18:53:54.500 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Sun Dec 31 18:53:52 CST 2017]; root of context hierarchy
+2017-12-31 18:53:54.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2017-12-31 18:53:54.583 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2017-12-31 18:53:54.583 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2017-12-31 18:53:54.584 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2017-12-31 18:53:54.584 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2017-12-31 18:53:54.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2017-12-31 18:53:54.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2017-12-31 18:53:54.586 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2017-12-31 18:53:54.586 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2017-12-31 18:53:54.586 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2017-12-31 18:53:54.588 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-31 18:53:54.588 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-31 18:53:54.620 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-31 18:53:54.620 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-31 18:53:54.658 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-31 18:53:54.682 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2017-12-31 18:53:54.898 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-12-31 18:53:54.906 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-12-31 18:53:55.002 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2017-12-31 18:53:55.006 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 3.178 seconds (JVM running for 3.699)

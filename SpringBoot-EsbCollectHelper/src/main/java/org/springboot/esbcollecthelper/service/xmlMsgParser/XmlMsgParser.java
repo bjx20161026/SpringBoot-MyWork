@@ -1,10 +1,10 @@
 package org.springboot.esbcollecthelper.service.xmlMsgParser;
 
+import org.bjx.helper.common.RegularHelper;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
-import org.springboot.esbcollecthelper.util.common.RegularHelper;
 import org.springframework.stereotype.Service;
 
 @Service

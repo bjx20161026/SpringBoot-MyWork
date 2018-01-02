@@ -2,7 +2,8 @@ package main;
 
 import java.io.IOException;
 
-import org.springboot.esbcollecthelper.util.file.FileContentReplaceHelper;
+import org.bjx.helper.file.FileContentReplaceHelper;
+
 
 public class FileContentRepalceTest {
 	

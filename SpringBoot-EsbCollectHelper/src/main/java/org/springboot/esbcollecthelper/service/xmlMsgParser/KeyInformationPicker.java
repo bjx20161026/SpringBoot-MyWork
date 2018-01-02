@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.bjx.helper.date.DateHelper;
 import org.dom4j.DocumentException;
 import org.springboot.esbcollecthelper.dao.def.EsbMsgCountDao;
 import org.springboot.esbcollecthelper.service.cache.MsgInfoCache;
-import org.springboot.esbcollecthelper.util.common.DateHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +21,8 @@ public class KeyInformationPicker {
 	XmlMsgParser xmlMsgParser;
 	@Autowired
 	EsbMsgCountDao esbMsgCountDao;
+	
+	DateHelper DateHelper = new DateHelper();
 	
 	public List<Map<String,Object>> pickUp(String protocol,String startTime,String endTime) {
 		List<Map<String,Object>> resultList = new ArrayList<Map<String,Object>>();
@@ -48,6 +50,8 @@ public class KeyInformationPicker {
 			resultMap.put("DOWNLOAD","&nbsp;&nbsp;&nbsp;<button type=\"button\" class=\"navbar-expand-toggle\" onclick=\"download('"+xmlMsgParser.getMyFileName()+"')\"><i class=\"icon glyphicon glyphicon-download-alt fa-1x\"></i></button>");		
 			resultMap.put("SENDMSG","&nbsp;&nbsp;&nbsp;<button type=\"button\" class=\"navbar-expand-toggle\" onclick=\"sendMsg('"+xmlMsgParser.getMyFileName()+"')\"><i class=\"icon glyphicon glyphicon-envelope fa-1x\"></i></button>");		
 //			resultMap.put("DOWNLOAD","<i class=\"icon glyphicon glyphicon-download-alt fa-1x\" onclick=\"download('"+xmlMsgParser.getMyFileName()+"')\"></i>");		
+			
+
 			resultMap.put("FILENAME", xmlMsgParser.getMyFileName());
 			resultMap.put("CHARSET", xmlMsgParser.getCharset());
 			resultList.add(resultMap);

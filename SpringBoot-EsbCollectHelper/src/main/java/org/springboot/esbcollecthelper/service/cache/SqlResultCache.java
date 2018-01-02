@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class SqlResultCache implements InitializingBean{
 	Logger logger = Logger.getLogger(getClass());
 	public static Map<String,Object> map = new HashMap<String,Object>();
