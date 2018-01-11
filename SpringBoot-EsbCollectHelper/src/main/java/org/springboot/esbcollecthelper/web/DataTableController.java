@@ -1,5 +1,8 @@
 package org.springboot.esbcollecthelper.web;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -72,6 +75,22 @@ public class DataTableController {
 			headers.setContentDispositionFormData("attachment", "DownloadFailed.csv");
 			return new ResponseEntity<byte[]>(bytes, headers, HttpStatus.OK);
 		}
+	}
+	
+	@RequestMapping(value = "/api/xmlKeyMap", method = RequestMethod.GET)	
+	public Map<String,Object> xmlKeyMap() throws Exception {
+		Map<String,Object> map = new HashMap<>();
+		List<String> heads = new ArrayList<String>();
+		heads.add("A");
+		heads.add("A");
+		heads.add("A");
+		heads.add("A");
+		List<Object> datas = new ArrayList<Object>();
+		datas.add(Arrays.asList("a","b","c","d"));
+		datas.add(Arrays.asList("1","2","3","4"));
+		map.put("heads", heads);
+		map.put("datas", datas);
+		return map;
 	}
 
 }

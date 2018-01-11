@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springboot.esbcollecthelper.dao.def.EsbMsgCountDao;
+import org.springboot.esbcollecthelper.service.cache.SqlResultCache;
 import org.springboot.esbcollecthelper.service.esbMsgCount.EsbMsgCount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -59,7 +60,7 @@ public class CommonController {
 	@RequestMapping(value = "/api/transError", method = RequestMethod.GET)
 	public Map transError() {
 		Map map = new HashMap<Object, Object>();
-		List<Map<String, Object>> countList = esbMsgCount.transError();
+		List<Map<String, Object>> countList = (List<Map<String, Object>>) SqlResultCache.map.get("TRANSERROR");//esbMsgCount.transError();
 		List<String> labels = new ArrayList<String>();
 		for (Map<String, Object> countMap : countList) {
 			labels.add((String) countMap.get("PERIOD"));
@@ -97,7 +98,4 @@ public class CommonController {
 		map.put("datasets", datasets);
 		return map;
 	}
-
-
-
 }
