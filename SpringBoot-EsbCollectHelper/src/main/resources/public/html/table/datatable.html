@@ -296,6 +296,7 @@
 											<th style="width: 500px;">FileName</th>
 											<th style="width: 10px;">Down</th>
 											<th style="width: 10px;">Send</th>
+											<th style="width: 10px;">Preview</th>
 										</tr>
 									</thead>
 									<tfoot>
@@ -305,6 +306,7 @@
 											<th>FileName</th>
 											<th>Down</th>
 											<th>Send</th>
+											<th>Preview</th>
 										</tr>
 									</tfoot>
 									<tbody>
@@ -312,61 +314,61 @@
 											<td class="sorting_1">2017-11-27 13:26:15</td>
 											<td>utf-8</td>
 											<td>W_Nokia_RNC_Nokia-3G-TDSOMCR1_PM_Carrier_171230_15_20171127-1300.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="even">
 											<td class="sorting_1">2017-11-27 13:26:15</td>
 											<td>utf-8</td>
 											<td>W_Nokia_RNC_Nokia-3G-TDSOMCR1_PM_UtranCell_171230_15_20171127-1300.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="odd">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>D_ZTE_DB_SMS-SYS_PM_SMSC-OTHER-DATA-HOURFLOW_001_5_20171127-1220P0.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="even">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>W_Huawei_ENODEB_Huawei-4G-LTE-OMC5_PM_EpRpDynS1uEnb_452_15_20171127-1300.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="odd">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>D_ZTE_DB_SMS-SYS_PM_SMSC-ACCE-HOURFLOW_001_5_20171127-1220P0.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="even">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>D_ZTE_OMC_SMS-SYS_PM_SHSMSC02_001_5_20171127-1220P0.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="odd">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>W_Huawei_ENODEB_Huawei-LTE-OMC3-3_PM_InventoryUnitRru_172341_15_20171127-1300P1.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="even">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>W_Huawei_RNC_Huawei-LTE-OMC3-3_PM_Carrier_172300_15_20171127-1300P1.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="odd">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>W_Huawei_ENODEB_Huawei-LTE-OMC3-3_PM_EpRpDynS1uEnb_168562_15_20171127-1300P1.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 										<tr role="row" class="even">
 											<td class="sorting_1">2017-11-27 13:26:16</td>
 											<td>utf-8</td>
 											<td>W_Huawei_MGCF_Huawei-IMS-VoLTE_IMS_U2000-1_PM_NcLinkMgcf_171441_15_20171127-1300.xml.gz</td>
-											<td></td> <td></td>
+											<td></td> <td></td><td></td>
 										</tr>
 									</tbody>
 								</table>
@@ -377,7 +379,54 @@
 			</div>
 		</div>
 	</div>
-	</div>
+</div>
+
+<!-- model -->
+
+        <div class="modal fade" id="modalCardExample" type="radio" tabindex="-1" role="dialog" aria-labelledby="" aria-hidde="false">
+            <div class="modal-dialog modal-lg">
+				<div class="row">
+                 <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+							<div class="title">File Preview</div>
+                        </div>
+						<div class="pull-right card-action">
+							<div class="btn-group" role="group">
+								<input type="checkbox" id="mydecode">&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+							<div class="btn-group" role="group">
+								<button id="buttonK" type="button" class="btn btn-info">Key Value</button>&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+							<div class="btn-group" role="group">
+								<button id="buttonL" type="button" class="btn btn-success">Load More</button>&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+							<div class="btn-group" role="group">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+						</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading" >File Name</div>
+                            <div class="panel-body">
+                                <p id="fileInfo">File Size : 100 MB   &nbsp;&nbsp;&nbsp;  Last Modification Time : 2018-01-11 12:00:00</p>
+                            </div>
+                            <!-- Table -->
+
+							<div id="mytable" style="overflow:scroll;">  
+             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- model end-->
+
+
 	<footer class="app-footer">
 		<div class="wrapper">
 			<span class="pull-right">2.1 <a href="#"><i
@@ -406,6 +455,7 @@
 		<script type="text/javascript" src="../../js/app.js"></script>
 		<script type="text/javascript" src="../../js/setTheming.js"></script>
 		<script type="text/javascript" src="../../js/dataTable.js"></script>
+		<script type="text/javascript" src="../../js/model.js"></script>
 </body>
 
 </html>

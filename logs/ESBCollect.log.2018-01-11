@@ -1,0 +1,92 @@
+2018-01-11 10:14:18  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 10:14:29  [ main:10650 ] - [ INFO ]  SqlResultCache Init Finished Cost [10648] ms
+2018-01-11 10:42:11  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 10:42:25  [ main:13886 ] - [ INFO ]  SqlResultCache Init Finished Cost [13885] ms
+2018-01-11 11:01:00  [ pool-3-thread-1:1128223 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 11:01:02  [ pool-3-thread-1:1130822 ] - [ INFO ]  -------------------------------
+2018-01-11 11:01:02  [ pool-3-thread-1:1130822 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 11:01:02  [ pool-3-thread-1:1130822 ] - [ INFO ]  cost : 2599 ms
+2018-01-11 11:01:02  [ pool-3-thread-1:1130822 ] - [ INFO ]  find : 8
+2018-01-11 11:01:02  [ pool-3-thread-1:1130823 ] - [ INFO ]  -------------------------------
+2018-01-11 11:06:21  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 11:06:32  [ main:10563 ] - [ INFO ]  SqlResultCache Init Finished Cost [10561] ms
+2018-01-11 12:01:00  [ pool-3-thread-1:3278529 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 12:01:02  [ pool-3-thread-1:3281191 ] - [ INFO ]  -------------------------------
+2018-01-11 12:01:02  [ pool-3-thread-1:3281192 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 12:01:02  [ pool-3-thread-1:3281192 ] - [ INFO ]  cost : 2662 ms
+2018-01-11 12:01:02  [ pool-3-thread-1:3281192 ] - [ INFO ]  find : 8
+2018-01-11 12:01:02  [ pool-3-thread-1:3281192 ] - [ INFO ]  -------------------------------
+2018-01-11 13:01:00  [ pool-3-thread-1:6878538 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 13:01:02  [ pool-3-thread-1:6881166 ] - [ INFO ]  -------------------------------
+2018-01-11 13:01:02  [ pool-3-thread-1:6881167 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 13:01:02  [ pool-3-thread-1:6881168 ] - [ INFO ]  cost : 2626 ms
+2018-01-11 13:01:02  [ pool-3-thread-1:6881169 ] - [ INFO ]  find : 10
+2018-01-11 13:01:02  [ pool-3-thread-1:6881170 ] - [ INFO ]  -------------------------------
+2018-01-11 14:01:00  [ pool-3-thread-1:10478491 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 14:01:03  [ pool-3-thread-1:10481717 ] - [ INFO ]  -------------------------------
+2018-01-11 14:01:03  [ pool-3-thread-1:10481717 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 14:01:03  [ pool-3-thread-1:10481717 ] - [ INFO ]  cost : 3225 ms
+2018-01-11 14:01:03  [ pool-3-thread-1:10481717 ] - [ INFO ]  find : 8
+2018-01-11 14:01:03  [ pool-3-thread-1:10481717 ] - [ INFO ]  -------------------------------
+2018-01-11 15:00:59  [ pool-3-thread-1:14078456 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 15:01:04  [ pool-3-thread-1:14082851 ] - [ INFO ]  -------------------------------
+2018-01-11 15:01:04  [ pool-3-thread-1:14082852 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 15:01:04  [ pool-3-thread-1:14082852 ] - [ INFO ]  cost : 4395 ms
+2018-01-11 15:01:04  [ pool-3-thread-1:14082852 ] - [ INFO ]  find : 24
+2018-01-11 15:01:04  [ pool-3-thread-1:14082852 ] - [ INFO ]  -------------------------------
+2018-01-11 16:00:59  [ pool-3-thread-1:17678456 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 16:01:05  [ pool-3-thread-1:17683680 ] - [ INFO ]  -------------------------------
+2018-01-11 16:01:05  [ pool-3-thread-1:17683680 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 16:01:05  [ pool-3-thread-1:17683680 ] - [ INFO ]  cost : 5223 ms
+2018-01-11 16:01:05  [ pool-3-thread-1:17683681 ] - [ INFO ]  find : 30
+2018-01-11 16:01:05  [ pool-3-thread-1:17683681 ] - [ INFO ]  -------------------------------
+2018-01-11 16:20:48  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 16:20:59  [ main:11459 ] - [ INFO ]  SqlResultCache Init Finished Cost [11455] ms
+2018-01-11 16:41:50  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 16:42:05  [ main:15453 ] - [ INFO ]  SqlResultCache Init Finished Cost [15452] ms
+2018-01-11 16:43:54  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 16:44:08  [ main:14265 ] - [ INFO ]  SqlResultCache Init Finished Cost [14263] ms
+2018-01-11 17:00:59  [ pool-3-thread-1:1025637 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 17:01:10  [ pool-3-thread-1:1036547 ] - [ INFO ]  -------------------------------
+2018-01-11 17:01:10  [ pool-3-thread-1:1036547 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 17:01:10  [ pool-3-thread-1:1036547 ] - [ INFO ]  cost : 10909 ms
+2018-01-11 17:01:10  [ pool-3-thread-1:1036547 ] - [ INFO ]  find : 31
+2018-01-11 17:01:10  [ pool-3-thread-1:1036547 ] - [ INFO ]  -------------------------------
+2018-01-11 18:00:59  [ pool-3-thread-1:4625637 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 18:01:00  [ pool-3-thread-1:4625777 ] - [ ERROR ]  
+### Error querying database.  Cause: java.sql.SQLException: Io 异常: Connection reset by peer: socket write error
+### The error may exist in file [E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes\mapper\def\EsbMsgCountMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select ERROR_REASON,   FILENAME_PATTERN,   PARSE_RULE,   to_char(PATH_TIME_STAMP, 'yyyy-MM-dd hh24:mi:ss') PATH_TIME_STAMP,   to_char(RECEIVE_TIME_STAMP, 'yyyy-MM-dd hh24:mi:ss') RECEIVE_TIME_STAMP,   SOURCE_PATH,   TABLE_NAME   from   ipmsds.META_DT_TASK_RECORD   where ERROR_REASON is not null   and   FILENAME_PATTERN is not null   and receive_time_stamp between   trunc(sysdate - 1 / 24, 'hh') and   trunc(sysdate, 'hh') - 0.00001
+### Cause: java.sql.SQLException: Io 异常: Connection reset by peer: socket write error
+; uncategorized SQLException for SQL []; SQL state [null]; error code [17002]; Io 异常: Connection reset by peer: socket write error; nested exception is java.sql.SQLException: Io 异常: Connection reset by peer: socket write error
+2018-01-11 18:01:00  [ pool-3-thread-1:4625778 ] - [ INFO ]  -------------------------------
+2018-01-11 18:01:00  [ pool-3-thread-1:4625778 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 18:01:00  [ pool-3-thread-1:4625778 ] - [ INFO ]  cost : 141 ms
+2018-01-11 18:01:00  [ pool-3-thread-1:4625778 ] - [ INFO ]  find : 31
+2018-01-11 18:01:00  [ pool-3-thread-1:4625778 ] - [ INFO ]  -------------------------------
+2018-01-11 19:00:59  [ pool-3-thread-1:8225637 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 19:01:00  [ pool-3-thread-1:8225638 ] - [ ERROR ]  
+### Error querying database.  Cause: java.sql.SQLException: 关闭的连接
+### The error may exist in file [E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes\mapper\def\EsbMsgCountMapper.xml]
+### The error may involve org.springboot.esbcollecthelper.dao.def.EsbMsgCountDao.errorReason
+### The error occurred while executing a query
+### SQL: select ERROR_REASON,   FILENAME_PATTERN,   PARSE_RULE,   to_char(PATH_TIME_STAMP, 'yyyy-MM-dd hh24:mi:ss') PATH_TIME_STAMP,   to_char(RECEIVE_TIME_STAMP, 'yyyy-MM-dd hh24:mi:ss') RECEIVE_TIME_STAMP,   SOURCE_PATH,   TABLE_NAME   from   ipmsds.META_DT_TASK_RECORD   where ERROR_REASON is not null   and   FILENAME_PATTERN is not null   and receive_time_stamp between   trunc(sysdate - 1 / 24, 'hh') and   trunc(sysdate, 'hh') - 0.00001
+### Cause: java.sql.SQLException: 关闭的连接
+; uncategorized SQLException for SQL []; SQL state [null]; error code [17008]; 关闭的连接; nested exception is java.sql.SQLException: 关闭的连接
+2018-01-11 19:01:00  [ pool-3-thread-1:8225638 ] - [ INFO ]  -------------------------------
+2018-01-11 19:01:00  [ pool-3-thread-1:8225638 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 19:01:00  [ pool-3-thread-1:8225638 ] - [ INFO ]  cost : 1 ms
+2018-01-11 19:01:00  [ pool-3-thread-1:8225639 ] - [ INFO ]  find : 31
+2018-01-11 19:01:00  [ pool-3-thread-1:8225639 ] - [ INFO ]  -------------------------------
+2018-01-11 19:59:28  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 19:59:47  [ main:18534 ] - [ INFO ]  SqlResultCache Init Finished Cost [18532] ms
+2018-01-11 20:01:00  [ pool-3-thread-1:91476 ] - [ INFO ]  scan for errorReason start!
+2018-01-11 20:01:10  [ pool-3-thread-1:102288 ] - [ INFO ]  -------------------------------
+2018-01-11 20:01:10  [ pool-3-thread-1:102288 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-11 20:01:10  [ pool-3-thread-1:102288 ] - [ INFO ]  cost : 10812 ms
+2018-01-11 20:01:10  [ pool-3-thread-1:102288 ] - [ INFO ]  find : 30
+2018-01-11 20:01:10  [ pool-3-thread-1:102289 ] - [ INFO ]  -------------------------------
+2018-01-11 20:09:31  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-11 20:09:41  [ main:10573 ] - [ INFO ]  SqlResultCache Init Finished Cost [10571] ms

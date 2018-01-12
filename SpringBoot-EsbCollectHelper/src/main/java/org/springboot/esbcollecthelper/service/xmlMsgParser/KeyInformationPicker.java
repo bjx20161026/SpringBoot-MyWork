@@ -51,7 +51,7 @@ public class KeyInformationPicker {
 			resultMap.put("SENDMSG","&nbsp;&nbsp;&nbsp;<button type=\"button\" class=\"navbar-expand-toggle\" onclick=\"sendMsg('"+xmlMsgParser.getMyFileName()+"')\"><i class=\"icon glyphicon glyphicon-envelope fa-1x\"></i></button>");		
 //			resultMap.put("DOWNLOAD","<i class=\"icon glyphicon glyphicon-download-alt fa-1x\" onclick=\"download('"+xmlMsgParser.getMyFileName()+"')\"></i>");		
 			
-
+			resultMap.put("PREVIEW","&nbsp;&nbsp;&nbsp;<button type=\"button\" class=\"navbar-expand-toggle\" onclick=\"preview('"+xmlMsgParser.getMyFileName()+"')\"><i class=\"fa fa-file-text-o\"></i></button>");		
 			resultMap.put("FILENAME", xmlMsgParser.getMyFileName());
 			resultMap.put("CHARSET", xmlMsgParser.getCharset());
 			resultList.add(resultMap);

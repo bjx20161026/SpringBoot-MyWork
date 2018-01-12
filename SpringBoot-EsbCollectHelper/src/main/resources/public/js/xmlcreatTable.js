@@ -6,7 +6,7 @@ $(function(){
 	  var tableData = "                   <table class=\"table table-bordered\">\r\n" + 
 		"                                     <thead>\r\n" + 
 		"                                        <tr>\r\n" + 
-		"                                            <th>#</th>\r\n";
+		"                                            <th style=\"width: 25px;\">#</th>\r\n";
 	  var fruits;
 	  $.ajax({
 			async : false,

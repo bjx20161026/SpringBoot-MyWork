@@ -68,13 +68,17 @@ public class DataTableController {
 		headers.setContentDispositionFormData("attachment", fileName);
 		return new ResponseEntity<byte[]>(bytes, headers, HttpStatus.OK);
 		}catch (Exception e) {
-			// TODO: handle exception
 			byte[] bytes = e.getMessage().getBytes();
 			HttpHeaders headers = new HttpHeaders();
 			headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
 			headers.setContentDispositionFormData("attachment", "DownloadFailed.csv");
 			return new ResponseEntity<byte[]>(bytes, headers, HttpStatus.OK);
 		}
+	}
+	
+	@RequestMapping(value = "/api/filePreview", method = RequestMethod.GET)
+	public Map<String,Object> filePreview(@RequestParam("fileName") String fileName,@RequestParam("start") int start,@RequestParam("charset") String charset) throws Exception {
+		return ftpFileDown.filePreview(fileName, start, charset);
 	}
 	
 	@RequestMapping(value = "/api/xmlKeyMap", method = RequestMethod.GET)	
