@@ -2,7 +2,7 @@
  * 
  */
 $(function(){
-  $("#button").click(function(){
+  $("#buttonKL").click(function(){
 	  var tableData = "                   <table class=\"table table-bordered\">\r\n" + 
 		"                                     <thead>\r\n" + 
 		"                                        <tr>\r\n" + 
@@ -25,7 +25,7 @@ $(function(){
 		tableData += fruits.datas.mydatas();
 		tableData +="                                    </tbody>\r\n" + 
 		"                                </table>";  
-		$("#mytable").append(tableData);
+		$("#mytableK2v").append(tableData);
   });
 });
 

@@ -1,188 +1,256 @@
-2018-01-12 09:39:39.747 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 11476 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
-2018-01-12 09:39:39.752 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
-2018-01-12 09:39:39.813 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 09:39:39 CST 2018]; root of context hierarchy
-2018-01-12 09:39:40.605 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 09:39:40.678 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 09:39:40.704 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77f78036] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 09:39:41.465 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2018-01-12 09:39:41.474 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2018-01-12 09:39:41.475 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
-2018-01-12 09:39:41.611 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2018-01-12 09:39:41.611 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1798 ms
-2018-01-12 09:39:41.711 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2018-01-12 09:39:41.713 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-01-12 09:39:41.713 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-01-12 09:39:41.713 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-01-12 09:39:41.713 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2018-01-12 09:45:11.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 09:39:39 CST 2018]; root of context hierarchy
-2018-01-12 09:45:11.226 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
-2018-01-12 09:45:11.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
-2018-01-12 09:45:11.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
-2018-01-12 09:45:11.230 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
-2018-01-12 09:45:11.230 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
-2018-01-12 09:45:11.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
-2018-01-12 09:45:11.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
-2018-01-12 09:45:11.232 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
-2018-01-12 09:45:11.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
-2018-01-12 09:45:11.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
-2018-01-12 09:45:11.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
-2018-01-12 09:45:11.237 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-01-12 09:45:11.237 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-01-12 09:45:11.272 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 09:45:11.273 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 09:45:11.320 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 09:45:11.345 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
-2018-01-12 09:45:11.536 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2018-01-12 09:45:11.549 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2018-01-12 09:45:11.592 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2018-01-12 09:45:11.595 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 332.101 seconds (JVM running for 332.635)
-2018-01-12 09:45:18.457 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-01-12 09:45:18.458 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2018-01-12 09:45:18.473 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
-2018-01-12 16:24:17.522 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 4032 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
-2018-01-12 16:24:17.526 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
-2018-01-12 16:24:17.577 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 16:24:17 CST 2018]; root of context hierarchy
-2018-01-12 16:24:18.402 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 16:24:18.471 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 16:24:18.499 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3f9fb646] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 16:24:19.292 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2018-01-12 16:24:19.302 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2018-01-12 16:24:19.303 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
-2018-01-12 16:24:19.439 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2018-01-12 16:24:19.440 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1863 ms
-2018-01-12 16:24:19.541 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2018-01-12 16:24:19.543 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-01-12 16:24:19.546 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-01-12 16:24:19.546 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-01-12 16:24:19.546 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2018-01-12 16:24:37.695 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 16:24:17 CST 2018]; root of context hierarchy
-2018-01-12 16:24:37.757 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
-2018-01-12 16:24:37.758 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
-2018-01-12 16:24:37.759 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
-2018-01-12 16:24:37.760 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
-2018-01-12 16:24:37.760 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
-2018-01-12 16:24:37.761 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
-2018-01-12 16:24:37.761 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
-2018-01-12 16:24:37.762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
-2018-01-12 16:24:37.762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
-2018-01-12 16:24:37.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
-2018-01-12 16:24:37.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
-2018-01-12 16:24:37.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
-2018-01-12 16:24:37.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-01-12 16:24:37.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-01-12 16:24:37.791 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 16:24:37.791 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 16:24:37.835 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 16:24:37.854 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
-2018-01-12 16:24:38.025 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2018-01-12 16:24:38.034 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2018-01-12 16:24:38.086 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2018-01-12 16:24:38.089 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 20.818 seconds (JVM running for 21.353)
-2018-01-12 16:24:41.724 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-01-12 16:24:41.724 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2018-01-12 16:24:41.737 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
-2018-01-12 17:06:49.091 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at java.io.Reader.<init>(Reader.java:78)
-	at java.io.InputStreamReader.<init>(InputStreamReader.java:97)
-	at org.springboot.esbcollecthelper.service.fileDownLoad.FtpFileDown.filePreview(FtpFileDown.java:50)
-	at org.springboot.esbcollecthelper.web.DataTableController.filePreview(DataTableController.java:81)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1698)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-2018-01-12 17:10:33.126 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 11096 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
-2018-01-12 17:10:33.130 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
-2018-01-12 17:10:33.184 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 17:10:33 CST 2018]; root of context hierarchy
-2018-01-12 17:10:33.978 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 17:10:34.047 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 17:10:34.074 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdb07d33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 17:10:34.872 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2018-01-12 17:10:34.881 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2018-01-12 17:10:34.882 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
-2018-01-12 17:10:35.010 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2018-01-12 17:10:35.010 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1826 ms
-2018-01-12 17:10:35.112 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2018-01-12 17:10:35.114 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-01-12 17:10:35.115 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-01-12 17:10:35.115 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-01-12 17:10:35.115 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2018-01-12 17:10:51.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 17:10:33 CST 2018]; root of context hierarchy
-2018-01-12 17:10:51.760 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
-2018-01-12 17:10:51.761 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
-2018-01-12 17:10:51.762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
-2018-01-12 17:10:51.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
-2018-01-12 17:10:51.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
-2018-01-12 17:10:51.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
-2018-01-12 17:10:51.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
-2018-01-12 17:10:51.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
-2018-01-12 17:10:51.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
-2018-01-12 17:10:51.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
-2018-01-12 17:10:51.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
-2018-01-12 17:10:51.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
-2018-01-12 17:10:51.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-01-12 17:10:51.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-01-12 17:10:51.798 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 17:10:51.798 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 17:10:51.834 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 17:10:51.857 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
-2018-01-12 17:10:52.027 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2018-01-12 17:10:52.037 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2018-01-12 17:10:52.079 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2018-01-12 17:10:52.082 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 19.226 seconds (JVM running for 19.922)
-2018-01-12 17:11:29.358 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-01-12 17:11:29.359 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2018-01-12 17:11:29.381 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
-2018-01-12 17:14:52.735 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2018-01-15 09:19:03.928 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 6544 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 09:19:03.940 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 09:19:04.030 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 09:19:04 CST 2018]; root of context hierarchy
+2018-01-15 09:19:05.103 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 09:19:05.217 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 09:19:05.247 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6411885] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 09:19:06.127 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 09:19:06.140 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 09:19:06.142 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 09:19:06.295 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 09:19:06.295 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2266 ms
+2018-01-15 09:19:06.391 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 09:19:06.392 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 09:19:06.393 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 09:19:06.393 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 09:19:06.393 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 09:22:33.670 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 09:19:04 CST 2018]; root of context hierarchy
+2018-01-15 09:22:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 09:22:33.752 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 09:22:33.752 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 09:22:33.753 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 09:22:33.754 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 09:22:33.754 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 09:22:33.755 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 09:22:33.755 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
+2018-01-15 09:22:33.755 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 09:22:33.756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 09:22:33.756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 09:22:33.757 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 09:22:33.758 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 09:22:33.759 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 09:22:33.790 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 09:22:33.791 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 09:22:33.829 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 09:22:33.848 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 09:22:34.061 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 09:22:34.069 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 09:22:34.119 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 09:22:34.125 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 210.609 seconds (JVM running for 224.893)
+2018-01-15 09:23:00.174 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 09:23:00.174 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 09:23:00.191 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-01-15 09:48:53.025 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 8052 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 09:48:53.027 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 09:48:53.080 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 09:48:53 CST 2018]; root of context hierarchy
+2018-01-15 09:48:53.828 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 09:48:53.896 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 09:48:53.922 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdb07d33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 09:48:54.643 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 09:48:54.652 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 09:48:54.653 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 09:48:54.774 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 09:48:54.775 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1695 ms
+2018-01-15 09:48:54.869 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 09:48:54.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 09:48:54.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 09:48:54.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 09:48:54.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 09:49:11.160 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 09:48:53 CST 2018]; root of context hierarchy
+2018-01-15 09:49:11.217 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 09:49:11.218 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 09:49:11.219 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 09:49:11.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 09:49:11.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 09:49:11.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 09:49:11.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 09:49:11.221 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 09:49:11.221 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
+2018-01-15 09:49:11.222 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 09:49:11.222 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 09:49:11.222 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 09:49:11.224 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 09:49:11.224 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 09:49:11.248 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 09:49:11.249 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 09:49:11.287 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 09:49:11.305 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 09:49:11.486 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 09:49:11.498 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 09:49:11.538 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 09:49:11.541 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 18.763 seconds (JVM running for 19.261)
+2018-01-15 09:49:24.977 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 09:49:24.977 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 09:49:24.990 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-01-15 10:32:53.371 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 8040 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 10:32:53.374 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 10:32:53.420 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 10:32:53 CST 2018]; root of context hierarchy
+2018-01-15 10:32:54.184 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 10:32:54.253 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 10:32:54.280 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6411885] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 10:32:55.009 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 10:32:55.018 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 10:32:55.019 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 10:32:55.141 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 10:32:55.141 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1721 ms
+2018-01-15 10:32:55.241 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 10:32:55.242 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 10:32:55.243 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 10:32:55.243 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 10:32:55.243 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 10:33:11.126 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 10:32:53 CST 2018]; root of context hierarchy
+2018-01-15 10:33:11.186 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 10:33:11.187 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 10:33:11.188 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 10:33:11.189 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 10:33:11.189 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 10:33:11.189 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 10:33:11.190 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
+2018-01-15 10:33:11.190 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 10:33:11.190 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 10:33:11.191 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 10:33:11.191 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 10:33:11.191 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 10:33:11.194 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 10:33:11.194 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 10:33:11.225 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 10:33:11.226 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 10:33:11.261 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 10:33:11.280 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 10:33:11.468 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 10:33:11.477 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 10:33:11.517 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 10:33:11.521 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 18.397 seconds (JVM running for 18.882)
+2018-01-15 10:33:37.410 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 10:33:37.411 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 10:33:37.423 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-01-15 11:26:35.615 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 7576 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 11:26:35.617 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 11:26:35.666 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 11:26:35 CST 2018]; root of context hierarchy
+2018-01-15 11:26:36.426 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 11:26:36.492 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 11:26:36.519 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6411885] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 11:26:37.359 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 11:26:37.368 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 11:26:37.369 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 11:26:37.497 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 11:26:37.498 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1832 ms
+2018-01-15 11:26:37.594 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 11:26:37.595 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 11:26:37.596 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 11:26:37.596 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 11:26:37.596 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 11:26:49.741 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 11:26:35 CST 2018]; root of context hierarchy
+2018-01-15 11:26:49.801 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 11:26:49.802 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 11:26:49.803 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 11:26:49.804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 11:26:49.804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 11:26:49.804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 11:26:49.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
+2018-01-15 11:26:49.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 11:26:49.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 11:26:49.806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 11:26:49.806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 11:26:49.807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 11:26:49.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 11:26:49.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 11:26:49.833 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 11:26:49.834 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 11:26:49.873 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 11:26:49.892 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 11:26:50.064 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 11:26:50.073 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 11:26:50.112 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 11:26:50.116 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 14.754 seconds (JVM running for 15.239)
+2018-01-15 11:28:05.829 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 11:28:05.829 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 11:28:05.843 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-01-15 13:18:48.104 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 4644 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 13:18:48.106 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 13:18:48.156 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 13:18:48 CST 2018]; root of context hierarchy
+2018-01-15 13:18:48.922 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 13:18:48.991 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 13:18:49.018 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$159458d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 13:18:49.804 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 13:18:49.813 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 13:18:49.814 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 13:18:49.937 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 13:18:49.937 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1781 ms
+2018-01-15 13:18:50.035 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 13:18:50.036 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 13:18:50.037 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 13:18:50.037 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 13:18:50.037 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 13:19:02.925 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 13:18:48 CST 2018]; root of context hierarchy
+2018-01-15 13:19:02.983 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 13:19:02.984 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 13:19:02.985 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 13:19:02.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 13:19:02.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
+2018-01-15 13:19:02.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 13:19:02.987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 13:19:02.987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 13:19:02.987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 13:19:02.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 13:19:02.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 13:19:02.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 13:19:02.990 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 13:19:02.990 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 13:19:03.015 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 13:19:03.015 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 13:19:03.055 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 13:19:03.074 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 13:19:03.244 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 13:19:03.256 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 13:19:03.297 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 13:19:03.300 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 15.434 seconds (JVM running for 15.899)
+2018-01-15 13:19:17.535 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 13:19:17.536 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 13:19:17.547 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-01-15 15:42:58.369 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 2164 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 15:42:58.372 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 15:42:58.419 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 15:42:58 CST 2018]; root of context hierarchy
+2018-01-15 15:42:59.193 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 15:42:59.260 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 15:42:59.287 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdb07d33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 15:43:00.026 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 15:43:00.035 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 15:43:00.036 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 15:43:00.158 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 15:43:00.158 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1739 ms
+2018-01-15 15:43:00.258 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 15:43:00.259 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 15:43:00.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 15:43:00.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 15:43:00.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 15:43:38.618 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 15:42:58 CST 2018]; root of context hierarchy
+2018-01-15 15:43:38.672 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 15:43:38.673 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 15:43:38.674 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 15:43:38.675 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 15:43:38.675 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 15:43:38.675 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 15:43:38.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 15:43:38.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 15:43:38.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 15:43:38.677 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 15:43:38.677 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 15:43:38.677 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 15:43:38.679 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 15:43:38.680 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 15:43:38.711 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 15:43:38.712 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 15:43:38.746 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 15:43:38.769 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 15:43:38.936 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 15:43:38.944 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 15:43:38.989 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 15:43:38.993 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 40.866 seconds (JVM running for 41.345)
+2018-01-15 15:43:57.817 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 15:43:57.817 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 15:43:57.830 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-01-15 16:06:09.544 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 java.net.ConnectException: Connection timed out: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
@@ -196,7 +264,7 @@ java.net.ConnectException: Connection timed out: connect
 	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
 	at org.apache.commons.net.SocketClient.connect(SocketClient.java:296)
 	at org.bjx.helper.ftp.FileOperate.login(FileOperate.java:50)
-	at org.springboot.esbcollecthelper.service.fileDownLoad.FtpFileDown.filePreview(FtpFileDown.java:41)
+	at org.springboot.esbcollecthelper.service.fileDownLoad.FtpFileDown.filePreview(FtpFileDown.java:45)
 	at org.springboot.esbcollecthelper.web.DataTableController.filePreview(DataTableController.java:81)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -251,22 +319,27 @@ java.net.ConnectException: Connection timed out: connect
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-2018-01-12 17:18:58.180 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
-	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
-	at org.apache.commons.net.SocketClient.connect(SocketClient.java:296)
-	at org.bjx.helper.ftp.FileOperate.login(FileOperate.java:50)
-	at org.springboot.esbcollecthelper.service.fileDownLoad.FtpFileDown.filePreview(FtpFileDown.java:41)
-	at org.springboot.esbcollecthelper.web.DataTableController.filePreview(DataTableController.java:81)
+2018-01-15 16:06:24.023 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.regex.PatternSyntaxException: Unknown character property name {m} near index 7
+.*?(<\Pm|<\Cm|<\Object).*?
+       ^] with root cause
+java.util.regex.PatternSyntaxException: Unknown character property name {m} near index 7
+.*?(<\Pm|<\Cm|<\Object).*?
+       ^
+	at java.util.regex.Pattern.error(Pattern.java:1955)
+	at java.util.regex.Pattern.charPropertyNodeFor(Pattern.java:2781)
+	at java.util.regex.Pattern.family(Pattern.java:2736)
+	at java.util.regex.Pattern.sequence(Pattern.java:2076)
+	at java.util.regex.Pattern.expr(Pattern.java:1996)
+	at java.util.regex.Pattern.group0(Pattern.java:2905)
+	at java.util.regex.Pattern.sequence(Pattern.java:2051)
+	at java.util.regex.Pattern.expr(Pattern.java:1996)
+	at java.util.regex.Pattern.compile(Pattern.java:1696)
+	at java.util.regex.Pattern.<init>(Pattern.java:1351)
+	at java.util.regex.Pattern.compile(Pattern.java:1054)
+	at org.bjx.helper.common.RegularHelper.isMatcher(RegularHelper.java:18)
+	at org.springboot.esbcollecthelper.service.fileDownLoad.SimpleXmlPrase.parse(SimpleXmlPrase.java:39)
+	at org.springboot.esbcollecthelper.service.fileDownLoad.FtpFileDown.xmlKey2Value(FtpFileDown.java:79)
+	at org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap(DataTableController.java:97)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -320,45 +393,87 @@ java.net.ConnectException: Connection timed out: connect
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-2018-01-12 17:30:41.970 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 9668 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
-2018-01-12 17:30:41.972 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
-2018-01-12 17:30:42.027 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 17:30:42 CST 2018]; root of context hierarchy
-2018-01-12 17:30:42.830 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 17:30:42.900 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 17:30:42.927 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$156f2193] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-12 17:30:43.665 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2018-01-12 17:30:43.677 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2018-01-12 17:30:43.678 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
-2018-01-12 17:30:43.805 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2018-01-12 17:30:43.806 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1779 ms
-2018-01-12 17:30:43.902 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2018-01-12 17:30:43.907 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-01-12 17:30:43.907 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-01-12 17:30:43.907 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-01-12 17:30:43.907 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2018-01-12 17:30:55.638 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Fri Jan 12 17:30:42 CST 2018]; root of context hierarchy
-2018-01-12 17:30:55.697 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
-2018-01-12 17:30:55.698 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
-2018-01-12 17:30:55.698 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
-2018-01-12 17:30:55.699 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
-2018-01-12 17:30:55.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
-2018-01-12 17:30:55.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
-2018-01-12 17:30:55.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap() throws java.lang.Exception
-2018-01-12 17:30:55.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
-2018-01-12 17:30:55.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
-2018-01-12 17:30:55.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
-2018-01-12 17:30:55.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
-2018-01-12 17:30:55.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
-2018-01-12 17:30:55.704 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-01-12 17:30:55.704 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-01-12 17:30:55.730 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 17:30:55.730 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 17:30:55.773 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-12 17:30:55.793 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
-2018-01-12 17:30:55.980 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2018-01-12 17:30:55.988 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2018-01-12 17:30:56.029 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2018-01-12 17:30:56.032 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 14.307 seconds (JVM running for 14.834)
-2018-01-12 17:32:53.388 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-01-12 17:32:53.389 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2018-01-12 17:32:53.412 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-01-15 16:12:17.838 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 8548 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 16:12:17.841 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 16:12:17.892 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 16:12:17 CST 2018]; root of context hierarchy
+2018-01-15 16:12:18.659 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 16:12:18.731 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 16:12:18.756 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b24e0895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 16:12:19.516 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 16:12:19.525 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 16:12:19.526 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 16:12:19.650 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 16:12:19.651 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1760 ms
+2018-01-15 16:12:19.752 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 16:12:19.753 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 16:12:19.754 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 16:12:19.754 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 16:12:19.754 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 16:12:31.327 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 16:12:17 CST 2018]; root of context hierarchy
+2018-01-15 16:12:31.383 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 16:12:31.384 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 16:12:31.384 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 16:12:31.385 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 16:12:31.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 16:12:31.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 16:12:31.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 16:12:31.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 16:12:31.387 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 16:12:31.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 16:12:31.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 16:12:31.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 16:12:31.390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 16:12:31.390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 16:12:31.420 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 16:12:31.421 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 16:12:31.459 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 16:12:31.482 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 16:12:31.705 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 16:12:31.718 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 16:12:31.789 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 16:12:31.793 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 14.207 seconds (JVM running for 14.716)
+2018-01-15 16:13:03.833 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 16:13:03.834 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 16:13:03.847 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-01-15 16:21:47.157 [main] INFO  o.s.esbcollecthelper.Application -Starting Application on jxbai-PC with PID 2796 (E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper\target\classes started by lenovo in E:\github\SpringBoot-MyWork\SpringBoot-EsbCollectHelper)
+2018-01-15 16:21:47.160 [main] INFO  o.s.esbcollecthelper.Application -No active profile set, falling back to default profiles: default
+2018-01-15 16:21:47.208 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 16:21:47 CST 2018]; root of context hierarchy
+2018-01-15 16:21:48.048 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 16:21:48.118 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 16:21:48.145 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d2250c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-15 16:21:48.930 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-01-15 16:21:48.942 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-01-15 16:21:48.943 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/7.0.59
+2018-01-15 16:21:49.070 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-01-15 16:21:49.071 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1863 ms
+2018-01-15 16:21:49.165 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-15 16:21:49.169 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-15 16:21:49.170 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-15 16:21:49.170 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-15 16:21:49.170 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-15 16:22:04.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b250b4: startup date [Mon Jan 15 16:21:47 CST 2018]; root of context hierarchy
+2018-01-15 16:22:04.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/transError],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.transError()
+2018-01-15 16:22:04.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageComponents],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.messageComponents()
+2018-01-15 16:22:04.460 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/msgCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.CommonController.MsgCount()
+2018-01-15 16:22:04.461 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/downByFileName],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.DataTableController.downByFileName(java.lang.String) throws java.lang.Exception
+2018-01-15 16:22:04.461 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/filePreview],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.filePreview(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 16:22:04.461 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/customMsg],methods=[POST]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.customMsg(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-15 16:22:04.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/xmlKeyMap],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springboot.esbcollecthelper.web.DataTableController.xmlKeyMap(java.lang.String,int,java.lang.String) throws java.lang.Exception
+2018-01-15 16:22:04.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/messageKeyInfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> org.springboot.esbcollecthelper.web.DataTableController.msgKeyInformationPick(java.lang.String,java.lang.String,java.lang.String)
+2018-01-15 16:22:04.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/sendMsg],methods=[GET]}" onto public java.lang.String org.springboot.esbcollecthelper.web.DataTableController.sendMsg(java.lang.String)
+2018-01-15 16:22:04.463 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/otherError],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.otherError() throws java.io.IOException
+2018-01-15 16:22:04.463 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/errorLeftCount],methods=[GET]}" onto public java.util.Map org.springboot.esbcollecthelper.web.TransErrorController.errorLeftCount()
+2018-01-15 16:22:04.464 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/valueTooLarge],methods=[GET],produces=[application/octet-stream;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<byte[]> org.springboot.esbcollecthelper.web.TransErrorController.valueTooLarge() throws java.io.IOException
+2018-01-15 16:22:04.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-15 16:22:04.466 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-15 16:22:04.498 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 16:22:04.499 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 16:22:04.538 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-15 16:22:04.557 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping -Adding welcome page: class path resource [public/index.html]
+2018-01-15 16:22:04.727 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-01-15 16:22:04.735 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-15 16:22:04.774 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-01-15 16:22:04.778 [main] INFO  o.s.esbcollecthelper.Application -Started Application in 17.874 seconds (JVM running for 18.388)
+2018-01-15 16:22:23.167 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-15 16:22:23.168 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-15 16:22:23.181 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms

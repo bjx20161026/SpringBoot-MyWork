@@ -82,19 +82,19 @@ public class DataTableController {
 	}
 	
 	@RequestMapping(value = "/api/xmlKeyMap", method = RequestMethod.GET)	
-	public Map<String,Object> xmlKeyMap() throws Exception {
-		Map<String,Object> map = new HashMap<>();
-		List<String> heads = new ArrayList<String>();
-		heads.add("A");
-		heads.add("A");
-		heads.add("A");
-		heads.add("A");
-		List<Object> datas = new ArrayList<Object>();
-		datas.add(Arrays.asList("a","b","c","d"));
-		datas.add(Arrays.asList("1","2","3","4"));
-		map.put("heads", heads);
-		map.put("datas", datas);
-		return map;
+	public Map<String,Object> xmlKeyMap(@RequestParam("fileName") String fileName,@RequestParam("start") int start,@RequestParam("charset") String charset) throws Exception {
+//		Map<String,Object> map = new HashMap<>();
+//		List<String> heads = new ArrayList<String>();
+//		heads.add("A");
+//		heads.add("A");
+//		heads.add("A");
+//		heads.add("A");
+//		List<Object> datas = new ArrayList<Object>();
+//		datas.add(Arrays.asList("a","b","c","d"));
+//		datas.add(Arrays.asList("1","2","3","4"));
+//		map.put("heads", heads);
+//		map.put("datas", datas);
+		return ftpFileDown.xmlKey2Value(fileName, start, charset);
 	}
 
 }

@@ -1,0 +1,100 @@
+2018-01-12 09:39:42  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-12 09:45:10  [ main:328773 ] - [ INFO ]  SqlResultCache Init Finished Cost [328771] ms
+2018-01-12 10:00:59  [ pool-3-thread-1:1277913 ] - [ INFO ]  scan for errorReason start!
+2018-01-12 10:01:41  [ pool-3-thread-1:1319412 ] - [ INFO ]  -------------------------------
+2018-01-12 10:01:41  [ pool-3-thread-1:1319412 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-12 10:01:41  [ pool-3-thread-1:1319412 ] - [ INFO ]  cost : 41499 ms
+2018-01-12 10:01:41  [ pool-3-thread-1:1319412 ] - [ INFO ]  find : 31
+2018-01-12 10:01:41  [ pool-3-thread-1:1319413 ] - [ INFO ]  -------------------------------
+2018-01-12 11:01:00  [ pool-3-thread-1:4877993 ] - [ INFO ]  scan for errorReason start!
+2018-01-12 11:01:03  [ pool-3-thread-1:4880991 ] - [ INFO ]  -------------------------------
+2018-01-12 11:01:03  [ pool-3-thread-1:4880992 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-12 11:01:03  [ pool-3-thread-1:4880992 ] - [ INFO ]  cost : 2999 ms
+2018-01-12 11:01:03  [ pool-3-thread-1:4880993 ] - [ INFO ]  find : 29
+2018-01-12 11:01:03  [ pool-3-thread-1:4880993 ] - [ INFO ]  -------------------------------
+2018-01-12 12:01:00  [ pool-3-thread-1:8477994 ] - [ INFO ]  scan for errorReason start!
+2018-01-12 12:01:05  [ pool-3-thread-1:8483069 ] - [ INFO ]  -------------------------------
+2018-01-12 12:01:05  [ pool-3-thread-1:8483069 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-12 12:01:05  [ pool-3-thread-1:8483069 ] - [ INFO ]  cost : 5075 ms
+2018-01-12 12:01:05  [ pool-3-thread-1:8483069 ] - [ INFO ]  find : 30
+2018-01-12 12:01:05  [ pool-3-thread-1:8483070 ] - [ INFO ]  -------------------------------
+2018-01-12 13:01:00  [ pool-3-thread-1:12077994 ] - [ INFO ]  scan for errorReason start!
+2018-01-12 13:01:05  [ pool-3-thread-1:12083168 ] - [ INFO ]  -------------------------------
+2018-01-12 13:01:05  [ pool-3-thread-1:12083169 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-12 13:01:05  [ pool-3-thread-1:12083169 ] - [ INFO ]  cost : 5174 ms
+2018-01-12 13:01:05  [ pool-3-thread-1:12083169 ] - [ INFO ]  find : 31
+2018-01-12 13:01:05  [ pool-3-thread-1:12083169 ] - [ INFO ]  -------------------------------
+2018-01-12 14:00:59  [ pool-3-thread-1:15677913 ] - [ INFO ]  scan for errorReason start!
+2018-01-12 14:01:02  [ pool-3-thread-1:15680588 ] - [ INFO ]  -------------------------------
+2018-01-12 14:01:02  [ pool-3-thread-1:15680589 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-12 14:01:02  [ pool-3-thread-1:15680589 ] - [ INFO ]  cost : 2676 ms
+2018-01-12 14:01:02  [ pool-3-thread-1:15680589 ] - [ INFO ]  find : 29
+2018-01-12 14:01:02  [ pool-3-thread-1:15680589 ] - [ INFO ]  -------------------------------
+2018-01-12 16:24:20  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-12 16:24:37  [ main:17305 ] - [ INFO ]  SqlResultCache Init Finished Cost [17303] ms
+2018-01-12 16:54:42  [ http-nio-8080-exec-4:1822475 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 16:56:36  [ http-nio-8080-exec-1:1936129 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 16:58:13  [ http-nio-8080-exec-9:2033447 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_SGSN_ERICSSON_2G_ENIQ_PM_ETHERNETPORT_15.GCP_APP/W_Ericsson_SGSN_Ericsson-2G-ENIQ_PM_EthernetPort_115060_15_20180112-1100.xml.gz] success
+2018-01-12 16:58:26  [ http-nio-8080-exec-6:2046664 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_SGSN_ERICSSON_2G_ENIQ_PM_MTPLINKTP_15.GCP_APP/W_Ericsson_SGSN_Ericsson-2G-ENIQ_PM_MtpLinkTp_115060_15_20180112-1100.xml.gz] success
+2018-01-12 17:00:59  [ pool-3-thread-1:2199916 ] - [ INFO ]  scan for errorReason start!
+2018-01-12 17:01:03  [ pool-3-thread-1:2203022 ] - [ INFO ]  -------------------------------
+2018-01-12 17:01:03  [ pool-3-thread-1:2203022 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-12 17:01:03  [ pool-3-thread-1:2203023 ] - [ INFO ]  cost : 3107 ms
+2018-01-12 17:01:03  [ pool-3-thread-1:2203023 ] - [ INFO ]  find : 6
+2018-01-12 17:01:03  [ pool-3-thread-1:2203023 ] - [ INFO ]  -------------------------------
+2018-01-12 17:01:45  [ http-nio-8080-exec-10:2245284 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_GGSN_ERICSSON_2G_ENIQ_PM_ETHERNETPORT.GCP_APP/W_Ericsson_GGSN_Ericsson-2G-ENIQ_PM_EthernetPort_113001_15_20180112-1100.xml.gz] success
+2018-01-12 17:02:29  [ http-nio-8080-exec-8:2289768 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_GGSN_ERICSSON_2G_ENIQ_PM_ETHERNETPORT.GCP_APP/W_Ericsson_GGSN_Ericsson-2G-ENIQ_PM_EthernetPort_113001_15_20180112-1100.xml.gz] success
+2018-01-12 17:05:17  [ http-nio-8080-exec-4:2457080 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_GGSN_ERICSSON_2G_ENIQ_PM_ETHERNETPORT.GCP_APP/W_Ericsson_GGSN_Ericsson-2G-ENIQ_PM_EthernetPort_113001_15_20180112-1100.xml.gz] success
+2018-01-12 17:06:10  [ http-nio-8080-exec-2:2510835 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_SCTPASSOC.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_SctpAssoc_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:06:48  [ http-nio-8080-exec-1:2548412 ] - [ INFO ]  [ftp] login [ftp://SMWEDS_GET:W1n3m5s#@10.221.232.136:21/SM_APP/DATA.PM.CELL_USER_NUMBER.SM_APP/cell_user_number_01121155.dat] success
+2018-01-12 17:07:23  [ http-nio-8080-exec-10:2583517 ] - [ INFO ]  [ftp] login [ftp://GCBSS_PUT:W1n3m5s#@10.221.232.136:21/GCBSS_APP/DATA.PM.AREA_ALARM_10.GCBSS_APP/AREA_ALARM_201801121200.csv] success
+2018-01-12 17:10:35  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-12 17:10:51  [ main:15970 ] - [ INFO ]  SqlResultCache Init Finished Cost [15968] ms
+2018-01-12 17:11:45  [ http-nio-8080-exec-2:69897 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:13:07  [ http-nio-8080-exec-4:152498 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:13:40  [ http-nio-8080-exec-5:185079 ] - [ INFO ]  [ftp] login [ftp://GCBSS_PUT:W1n3m5s#@10.221.232.136:21/GCBSS_APP/DATA.PM.AREA_ALARM_10.GCBSS_APP/AREA_ALARM_201801121200.csv] success
+2018-01-12 17:15:25  [ http-nio-8080-exec-9:289979 ] - [ INFO ]  [ftp] login [ftp://GCBSS_PUT:W1n3m5s#@10.221.232.136:21/GCBSS_APP/DATA.PM.AREA_ALARM_10.GCBSS_APP/AREA_ALARM_201801121200.csv] success
+2018-01-12 17:16:06  [ http-nio-8080-exec-10:330897 ] - [ INFO ]  [ftp] login [ftp://GCBSS_PUT:W1n3m5s#@10.221.232.136:21/GCBSS_APP/DATA.PM.AREA_ALARM_10.GCBSS_APP/AREA_ALARM_201801121200.csv] success
+2018-01-12 17:17:37  [ http-nio-8080-exec-9:421572 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:18:22  [ http-nio-8080-exec-10:467089 ] - [ INFO ]  [ftp] login [ftp://GCBSS_PUT:W1n3m5s#@10.221.232.136:21/GCBSS_APP/DATA.PM.AREA_ALARM_10.GCBSS_APP/AREA_ALARM_201801121200.csv] success
+2018-01-12 17:19:12  [ http-nio-8080-exec-8:516905 ] - [ INFO ]  [ftp] login [ftp://NETVISTA_PUT:W1n3m5s#@10.221.232.135:21/NETVISTA_APP/DATA.PM.STB_FWQZL.NETVISTA_APP/STB_FWQZL_20180112110000.CSV] success
+2018-01-12 17:19:25  [ http-nio-8080-exec-1:530473 ] - [ INFO ]  [ftp] login [ftp://NETVISTA_PUT:W1n3m5s#@10.221.232.135:21/NETVISTA_APP/DATA.PM.STB_YHQK.NETVISTA_APP/STB_YHQK_20180112110000.CSV] success
+2018-01-12 17:20:07  [ http-nio-8080-exec-3:572426 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:20:36  [ http-nio-8080-exec-4:601066 ] - [ INFO ]  [ftp] login [ftp://NETVISTA_PUT:W1n3m5s#@10.221.232.135:21/NETVISTA_APP/DATA.PM.STB_FWQZL.NETVISTA_APP/STB_FWQZL_20180112110000.CSV] success
+2018-01-12 17:22:23  [ http-nio-8080-exec-5:708028 ] - [ INFO ]  [ftp] login [ftp://NETVISTA_PUT:W1n3m5s#@10.221.232.135:21/NETVISTA_APP/DATA.PM.STB_FWQZL.NETVISTA_APP/STB_FWQZL_20180112110000.CSV] success
+2018-01-12 17:22:34  [ http-nio-8080-exec-2:718613 ] - [ INFO ]  [ftp] login [ftp://NETVISTA_PUT:W1n3m5s#@10.221.232.135:21/NETVISTA_APP/DATA.PM.STB_FWQZL.NETVISTA_APP/STB_FWQZL_20180112110000.CSV] success
+2018-01-12 17:23:58  [ http-nio-8080-exec-9:803424 ] - [ INFO ]  [ftp] login [ftp://SMWEDS_GET:W1n3m5s#@10.221.232.136:21/SM_APP/DATA.CALLREC.GSM_TCH_DISTRI.SM_APP/zc_gbssap_tch_stat_01121130.dat] success
+2018-01-12 17:25:26  [ http-nio-8080-exec-6:891143 ] - [ INFO ]  [ftp] login [ftp://NETVISTA_PUT:W1n3m5s#@10.221.232.135:21/NETVISTA_APP/DATA.PM.STB_JMMX.NETVISTA_APP/STB_JMMX_20180112110000.CSV] success
+2018-01-12 17:26:25  [ http-nio-8080-exec-9:950177 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:26:45  [ http-nio-8080-exec-4:969663 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_MCLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_McLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:30:44  [ main:0 ] - [ INFO ]  SqlResultCache Init Start!
+2018-01-12 17:30:55  [ main:11123 ] - [ INFO ]  SqlResultCache Init Finished Cost [11121] ms
+2018-01-12 17:33:00  [ http-nio-8080-exec-2:135973 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:33:38  [ http-nio-8080-exec-5:174542 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:34:07  [ http-nio-8080-exec-7:202768 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:39:38  [ http-nio-8080-exec-8:534576 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 17:59:09  [ http-nio-8080-exec-3:1704769 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:00:52  [ http-nio-8080-exec-6:1808214 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:00:59  [ pool-3-thread-1:1815741 ] - [ INFO ]  scan for errorReason start!
+2018-01-12 18:01:20  [ pool-3-thread-1:1836246 ] - [ INFO ]  -------------------------------
+2018-01-12 18:01:20  [ pool-3-thread-1:1836247 ] - [ INFO ]  scan for errorReanson finished!
+2018-01-12 18:01:20  [ pool-3-thread-1:1836247 ] - [ INFO ]  cost : 20506 ms
+2018-01-12 18:01:20  [ pool-3-thread-1:1836247 ] - [ INFO ]  find : 9
+2018-01-12 18:01:20  [ pool-3-thread-1:1836247 ] - [ INFO ]  -------------------------------
+2018-01-12 18:13:03  [ http-nio-8080-exec-6:2538841 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:14:45  [ http-nio-8080-exec-7:2641695 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:16:10  [ http-nio-8080-exec-9:2726197 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:23:35  [ http-nio-8080-exec-2:3171704 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:25:33  [ http-nio-8080-exec-5:3289445 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:28:36  [ http-nio-8080-exec-8:3472243 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:29:28  [ http-nio-8080-exec-4:3524253 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:29:34  [ http-nio-8080-exec-8:3530660 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_MTPLINKSETTP.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_MtpLinkSetTp_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:29:46  [ http-nio-8080-exec-2:3542599 ] - [ INFO ]  [ftp] login [ftp://XNftp:XNftp!$1@10.221.232.141:21/rlorder/RL_PUSH_TSORDERS_20180112120045.txt] success
+2018-01-12 18:30:16  [ http-nio-8080-exec-9:3572187 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_SGSN_ERICSSON_2G_ENIQ_PM_MANAGEDELEMENT_15.GCP_APP/W_Ericsson_SGSN_Ericsson-2G-ENIQ_PM_ManagedElement_115060_15_20180112-1100.xml.gz] success
+2018-01-12 18:30:26  [ http-nio-8080-exec-10:3582151 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_SGSN_ERICSSON_2G_ENIQ_PM_SIGNROUTESET_15.GCP_APP/W_Ericsson_SGSN_Ericsson-2G-ENIQ_PM_SignRouteSet_115060_15_20180112-1100.xml.gz] success
+2018-01-12 18:30:34  [ http-nio-8080-exec-1:3590529 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_MTPLINKSETTP.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_MtpLinkSetTp_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:31:11  [ http-nio-8080-exec-6:3627066 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_SGSN_ERICSSON_2G_ENIQ_PM_ETHERNETPORT_15.GCP_APP/W_Ericsson_SGSN_Ericsson-2G-ENIQ_PM_EthernetPort_115060_15_20180112-1100.xml.gz] success
+2018-01-12 18:31:14  [ http-nio-8080-exec-3:3630328 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_ETHERNETPORT.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_EthernetPort_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:31:20  [ http-nio-8080-exec-5:3636356 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_GGSN_ERICSSON_2G_ENIQ_PM_MANAGEDELEMENT.GCP_APP/W_Ericsson_GGSN_Ericsson-2G-ENIQ_PM_ManagedElement_113001_15_20180112-1100.xml.gz] success
+2018-01-12 18:31:31  [ http-nio-8080-exec-7:3646990 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_MTPLINKSETTP.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_MtpLinkSetTp_112861_15_20180112-1100.xml.gz] success
+2018-01-12 18:31:40  [ http-nio-8080-exec-4:3655782 ] - [ INFO ]  [ftp] login [ftp://GCP_PUT:W1n3m5s#@10.221.232.137:21/GCP_APP/DATA.PM.W_ERICSSON_MGW_ERICSSON_2G_ENIQ_PM_IUCSLINKMGW.GCP_APP/W_Ericsson_MGW_Ericsson-2G-ENIQ_PM_IucsLinkMgw_112861_15_20180112-1100.xml.gz] success
