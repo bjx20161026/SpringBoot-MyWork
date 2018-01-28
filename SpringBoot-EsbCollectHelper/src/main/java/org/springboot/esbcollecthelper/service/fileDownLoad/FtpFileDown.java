@@ -59,7 +59,7 @@ public class FtpFileDown {
 		for (int i = 0; i < start+500; i++) {
 			if ((temp = br.readLine()) == null)
 				break;
-			System.out.println("temp : "+temp);
+			//System.out.println("temp : "+temp);
 			listData.add(temp);
 		}
 		map.put("datas", listData);

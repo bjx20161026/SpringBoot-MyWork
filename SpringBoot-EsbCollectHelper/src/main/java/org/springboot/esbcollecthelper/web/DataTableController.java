@@ -1,8 +1,5 @@
 package org.springboot.esbcollecthelper.web;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +12,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -83,17 +79,6 @@ public class DataTableController {
 	
 	@RequestMapping(value = "/api/xmlKeyMap", method = RequestMethod.GET)	
 	public Map<String,Object> xmlKeyMap(@RequestParam("fileName") String fileName,@RequestParam("start") int start,@RequestParam("charset") String charset) throws Exception {
-//		Map<String,Object> map = new HashMap<>();
-//		List<String> heads = new ArrayList<String>();
-//		heads.add("A");
-//		heads.add("A");
-//		heads.add("A");
-//		heads.add("A");
-//		List<Object> datas = new ArrayList<Object>();
-//		datas.add(Arrays.asList("a","b","c","d"));
-//		datas.add(Arrays.asList("1","2","3","4"));
-//		map.put("heads", heads);
-//		map.put("datas", datas);
 		return ftpFileDown.xmlKey2Value(fileName, start, charset);
 	}
 
