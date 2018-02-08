@@ -17,13 +17,13 @@ $(function() {
 
 
 function download(fileName){
-    var url = "http://localhost:8080/api/downByFileName?fileName="+fileName;
+    var url = "http://"+urlandport+"/api/downByFileName?fileName="+fileName;
     window.location.href=url;
 }
 
 $(function() {
 	$('#tt').treegrid({
-		url: "http://localhost:8080/api/folderBrowser?id="+cacheId,
+		url: "http://"+urlandport+"/api/folderBrowser?id="+cacheId,
 		method: 'get',
 		rownumbers: false,
 		idField: 'id',

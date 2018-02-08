@@ -205,7 +205,7 @@ function start(){
         process.stdout.write('\033c');
         setupWatchers();
         serve();
-        opn("http://localhost:8080");
+        opn("http://"+urlandport+"");
     }
 
     else {

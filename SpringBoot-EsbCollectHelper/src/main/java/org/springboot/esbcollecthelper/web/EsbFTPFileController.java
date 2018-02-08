@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 import org.apache.commons.net.ftp.FTPFile;
 import org.bjx.helper.date.DateHelper;
@@ -21,8 +22,8 @@ public class EsbFTPFileController {
 	public static Map<String,String> staticMap = new HashMap<>();
 	
 	@RequestMapping(value = "/api/folderBrowser",method = RequestMethod.GET)
-	public List<Map<String,Object>> folderBrowser(@RequestParam("id") String id) throws Exception{
-		System.out.println("id : "+id);
+	public synchronized List<Map<String,Object>> folderBrowser(@RequestParam("id") String id) throws Exception{	
+		
 		String[] ids = id.split(",");
 		id = ids[ids.length-1];
 		String root = "";
@@ -58,8 +59,7 @@ public class EsbFTPFileController {
 		List<Map<String,Object>> list = new ArrayList<Map<String,Object>>();
 		List<String> rmList = new ArrayList<String>();
 		for(Entry<String, String> entry:staticMap.entrySet()) {
-			if(entry.getKey().startsWith(id)&&entry.getKey().length()>6) {
-				staticMap.remove(entry.getKey());
+			if(entry.getKey().startsWith(id)&&entry.getKey().length()>7) {
 				rmList.add(entry.getKey());
 			}
 		}
@@ -126,11 +126,14 @@ public class EsbFTPFileController {
 		for(FTPFile ftpFile:ftpFiles) {
 			 i++;
 			 if(i<10) {
-				 tempI = "00"+i;
+				 tempI = "000"+i;
 			 }else if(i<100) {
+				 tempI = "00"+i;
+			 }else if(i<1000) {
 				 tempI = "0"+i;
-			 }
-			 tempI = ""+i;
+			 }else {
+				 tempI = ""+i;
+			 } 
 			 map = new HashMap<>();
 			 map.put("id", id+tempI);
 			 map.put("name", ftpFile.getName());

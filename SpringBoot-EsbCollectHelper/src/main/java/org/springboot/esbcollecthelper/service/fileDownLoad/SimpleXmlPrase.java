@@ -6,8 +6,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.bjx.helper.common.RegularHelper;
 import org.springframework.stereotype.Service;
@@ -18,13 +20,14 @@ public class SimpleXmlPrase {
 		start +=10;
 		int num = 0;
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, charset));
-		List<String> heads = new ArrayList<String>();
+		Map<Integer, String> heads = new  LinkedHashMap<Integer, String>();
 		String temp="";
 		List<Map<Integer, String>> matchList = new ArrayList<Map<Integer, String>>();
 		Map<Integer, String> matchMap = new  HashMap<>();
 		while((temp = bufferedReader.readLine()) != null) {
 			if(RegularHelper.isMatcher(temp, ".*?>(.*?)</N>")){
-				heads.add(RegularHelper.MatcherValue(temp, ".*?>(.*?)</N>"));
+				Map<Integer, String> tempMap = RegularHelper.MatcherValues(temp, ".*?i=\"(.*?)\">(.*?)</N>");
+				heads.put(Integer.parseInt(tempMap.get(1)), tempMap.get(2));
 				continue;
 			}			
 			if(RegularHelper.isMatcher(temp, ".*?<V i=\"(.*?)\">(.*?)</v>")){
@@ -50,14 +53,19 @@ public class SimpleXmlPrase {
 			}
 		}
 	    Map<String,Object> resultMap = new HashMap<>();
-	    resultMap.put("heads", heads);
+	    List<String> reHeads = new ArrayList<>();
+	    List<Integer> reData = new ArrayList<>();
+	    for(Entry<Integer, String> entry : heads.entrySet()) {
+	    	reData.add(entry.getKey());
+	    	reHeads.add(entry.getValue());
+	    }
+	    resultMap.put("heads", reHeads);
 	    List<Object> datas = new ArrayList<Object>();
 	    List<String> data ;
-	    for(int i=0;i<matchList.size();i++) {
-	    	matchMap = matchList.get(i);
+	    for(Map<Integer, String> map:matchList) {	 
 	    	data = new ArrayList<>();
-	    	for(int j=0;j<heads.size();j++) {
-	    		data.add(matchMap.get(j)==null?"":matchMap.get(j));
+	    	for(int j:reData) {
+	    		data.add(map.get(j)==null?"":map.get(j));
 	    	}
 	    	datas.add(data);
 	    }

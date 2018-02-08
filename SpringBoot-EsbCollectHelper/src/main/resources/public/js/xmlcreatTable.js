@@ -12,7 +12,7 @@ $(function(){
 			async : false,
 			type : "get",
 			contentType : "application/json",
-			url : "http://localhost:8080/api/xmlKeyMap",
+			url : "http://"+urlandport+"/api/xmlKeyMap",
 			success : function(result) {
 				alert(result);
 				fruits = result;

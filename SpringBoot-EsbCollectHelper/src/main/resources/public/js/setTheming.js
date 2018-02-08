@@ -1,6 +1,9 @@
 /**
  * 
  */
+ 
+var urlandport = "localhost:8080";
+ 
 $(function() {
 	if (getCookie("EsbNavbar") == "inverse") {
 		return $("#navbar").removeClass("navbar-default").addClass(

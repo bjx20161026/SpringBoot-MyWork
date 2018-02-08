@@ -5,7 +5,7 @@ $(function() {
 			async : false,
 			type : "get",
 			contentType : "application/json",
-			url : "http://localhost:8080/api/messageComponents",
+			url : "http://"+urlandport+"/api/messageComponents",
 			success : function(result) {
 				if (result != null) {
 					data = result;
@@ -46,7 +46,7 @@ $(function() {
 			async : false,
 			type : "get",
 			contentType : "application/json",
-			url : "http://localhost:8080/api/msgCount",
+			url : "http://"+urlandport+"/api/msgCount",
 			success : function(result) {
 				if (result != null) {
 					data = result;
@@ -105,7 +105,7 @@ $(function() {
 			async : false,
 			type : "get",
 			contentType : "application/json",
-			url : "http://localhost:8080/api/transError",
+			url : "http://"+urlandport+"/api/transError",
 			success : function(result) {
 				if (result != null) {
 					data = result;

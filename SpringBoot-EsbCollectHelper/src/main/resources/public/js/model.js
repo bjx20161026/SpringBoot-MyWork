@@ -21,7 +21,7 @@ function intipreview(fileName,start,charset){
 		async : false,
 		type : "get",
 		contentType : "application/json",
-		url : "http://localhost:8080/api/filePreview?fileName="+fileName+"&start="+start+"&charset="+charset,
+		url : "http://"+urlandport+"/api/filePreview?fileName="+fileName+"&start="+start+"&charset="+charset,
 		success : function(result) {
 			fruits = result;
 		}
@@ -129,7 +129,7 @@ $(function(){
 				async : false,
 				type : "get",
 				contentType : "application/json",
-				url : "http://localhost:8080/api/xmlKeyMap?fileName="+cachefileName+"&charset="+cacheEncode+"&start="+start,
+				url : "http://"+urlandport+"/api/xmlKeyMap?fileName="+cachefileName+"&charset="+cacheEncode+"&start="+start,
 				success : function(result) {
 					fruits = result;
 				}
