@@ -4,8 +4,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class MsgInfoCache {
-	public static int maximumSize = 100000;  
-	public static int maxiMsgSize = 100;  
+	public final static int maximumSize = 100000;  
+	public final static int maxiMsgSize = 500;  
 	public static LinkedHashMap<String,Object> ftpUrlMap= new LinkedHashMap<String,Object>() {  
 	        private static final long serialVersionUID = 1L;  
 	        @Override  
