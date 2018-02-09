@@ -9,38 +9,40 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StopWatch;
 
 @Service
-public class SqlResultCache implements InitializingBean{
+public class SqlResultCache extends Thread implements InitializingBean{
 	Logger logger = Logger.getLogger(getClass());
 	public static Map<String,Object> map = new HashMap<String,Object>();
 	@Autowired
 	EsbMsgCountDao esbMsgCountDao;
 	
-	public void init() {
-		logger.info("SqlResultCache Init Start!");
-		long start = System.currentTimeMillis();
+	public void init() {		
+		StopWatch stopWatch = new StopWatch();
+		stopWatch.start("EFFECTIVEMSG");
 		map.put("EFFECTIVEMSG", esbMsgCountDao.countEffectiveMsg());
+		stopWatch.stop();
+		stopWatch.start("TRANSERROR");
 		map.put("TRANSERROR", esbMsgCountDao.transError());
-		logger.info("SqlResultCache Init Finished Cost ["+(System.currentTimeMillis()-start)+"] ms");
+		stopWatch.stop();
+		logger.info(stopWatch.prettyPrint());
+	}
+	
+	@Override
+	public void run(){
+		init();
 	}
 	
 	@Scheduled(cron = "0 1 0 * * ?")
 	public void refreshByDay() {
 		logger.info("RefreshByDay Start!");
-		long start = System.currentTimeMillis();
-		map.put("EFFECTIVEMSG", esbMsgCountDao.countEffectiveMsg());
-		map.put("TRANSERROR", esbMsgCountDao.transError());
-		logger.info("-------------------------------");
-		logger.info("RefreshByDay finished!");
-		logger.info("cost : "+(System.currentTimeMillis()-start)+" ms");
-		logger.info("-------------------------------");
+		init();
 	}
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		// TODO Auto-generated method stub
-		init();
+		start();
 	}
 
 }
