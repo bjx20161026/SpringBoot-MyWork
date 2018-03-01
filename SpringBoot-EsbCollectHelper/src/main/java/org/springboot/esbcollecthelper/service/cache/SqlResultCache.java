@@ -26,6 +26,9 @@ public class SqlResultCache extends Thread implements InitializingBean{
 		stopWatch.start("TRANSERROR");
 		map.put("TRANSERROR", esbMsgCountDao.transError());
 		stopWatch.stop();
+		stopWatch.start("TRANSERROR");
+		map.put("MESSAGECOMPONENTS", esbMsgCountDao.messageComponents());
+		stopWatch.stop();	
 		logger.info(stopWatch.prettyPrint());
 	}
 	

@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springboot.esbcollecthelper.dao.def.EsbMsgCountDao;
 import org.springboot.esbcollecthelper.service.cache.SqlResultCache;
 import org.springboot.esbcollecthelper.service.esbMsgCount.EsbMsgCount;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommonController {
 	@Autowired
 	EsbMsgCount esbMsgCount;
-	@Autowired
-	EsbMsgCountDao esbMsgCountDao;
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@RequestMapping(value = "/api/msgCount", method = RequestMethod.GET)
@@ -53,7 +50,7 @@ public class CommonController {
 	@SuppressWarnings("rawtypes")
 	@RequestMapping(value = "/api/messageComponents", method = RequestMethod.GET)
 	public Map messageComponents() {
-		return esbMsgCountDao.messageComponents();
+		return esbMsgCount.messageComponents();
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })

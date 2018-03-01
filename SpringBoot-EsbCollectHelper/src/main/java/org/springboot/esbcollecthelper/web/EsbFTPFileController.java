@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 import org.apache.commons.net.ftp.FTPFile;
 import org.bjx.helper.date.DateHelper;

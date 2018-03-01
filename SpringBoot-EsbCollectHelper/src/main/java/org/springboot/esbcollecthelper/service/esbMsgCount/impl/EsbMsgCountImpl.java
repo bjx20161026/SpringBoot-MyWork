@@ -24,4 +24,11 @@ public class EsbMsgCountImpl implements EsbMsgCount{
 		return (List<Map<String, Object>>) SqlResultCache.map.get("TRANSERROR");
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public Map<String, Object> messageComponents() {
+		// TODO Auto-generated method stub
+		return (Map<String, Object>) SqlResultCache.map.get("MESSAGECOMPONENTS");
+	}
+
 }
