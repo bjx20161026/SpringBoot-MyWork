@@ -24,7 +24,12 @@
 		<mybatis-spring-boot>1.2.0</mybatis-spring-boot>
 		<tomcat.version>7.0.59</tomcat.version>
 		<java.version>1.8</java.version>
-	</properties>
+		<dir.bin>${project.build.directory}/${project.artifactId}/bin</dir.bin>
+		<dir.conf>${project.build.directory}/${project.artifactId}/conf</dir.conf>
+		<dir.lib>${project.build.directory}/${project.artifactId}/lib</dir.lib>
+		<dir.logs>${project.build.directory}/${project.artifactId}/logs</dir.logs>
+<!-- 		<maven-dependency-plugin.version>2.20</maven-dependency-plugin.version>
+ -->	</properties>
 
 	<dependencies>
 
@@ -111,4 +116,75 @@
 			<version>10.2.0.2.0</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<!-- <exclude>*.properties</exclude> -->
+				</excludes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version><!--$NO-MVN-MAN-VER$-->
+				<executions>
+					<execution>
+						<id>copy</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>
+								${dir.lib}
+							</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.3</version><!--$NO-MVN-MAN-VER$-->
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<!-- -->
+								<mkdir dir="${dir.bin}" />
+								<mkdir dir="${dir.conf}" />
+								<mkdir dir="${dir.logs}" />
+								<mkdir dir="${dir.bin}/src" />
+								<mkdir dir="${dir.bin}/src/main" />
+								<copy todir="${dir.bin}">
+									<fileset dir="${project.build.directory}/../src/bin">
+										<include name="**/*" />
+									</fileset>
+								</copy>
+								<copy todir="${dir.conf}">
+									<fileset dir="${project.build.directory}/../src/main/resources">
+										<include name="**/*" />
+									</fileset>
+								</copy>
+								<copy todir="${dir.lib}">
+									<fileset dir="${project.build.directory}">
+										<include name="${project.artifactId}-${project.version}.jar" />
+									</fileset>
+								</copy>
+								
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
